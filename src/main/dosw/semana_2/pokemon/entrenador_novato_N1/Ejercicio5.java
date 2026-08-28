@@ -1,0 +1,56 @@
+package src.main.dosw.semana_2.pokemon.entrenador_novato_N1;
+
+import java.util.List;
+
+/**PATRÓN: CONTEO CONDICIONAL (FILTER + COUNT)
+ * Uso:
+ * "Dada una lista, saber CUÁNTOS elementos cumplen con una condición
+ * específica, obteniendo directamente el número total en lugar de una lista".
+ *
+ * ESTRUCTURA CLAVE:
+ * 1. .stream() -> Abre la lista de objetos.
+ * 2. .filter( p -> p.nivel() > 80 ) -> Deja pasar solo los elementos que cumplen la regla.
+ * 3. .count() -> Cuenta cuántos elementos sobrevivieron al filtro.
+ *    Devuelve un dato de tipo 'long' y cierra el proceso.
+ */
+
+public class Ejercicio5 {
+
+    // Record para estructurar los datos de entrada
+    record Pokemon(String nombre, int nivel) {}
+
+    /**
+     * Filtra la lista para contar los Pokémon con nivel superior a 80 utilizando count().
+     * Para coincidir exactamente con la salida esperada visual, también se realiza un
+     * mapeo para extraer y mostrar sus nombres.
+     */
+
+    public static void ejercicio5() {
+        List<Pokemon> pokemones = List.of(
+                new Pokemon("Pikachu", 45),
+                new Pokemon("Mewtwo", 88),
+                new Pokemon("Dragonite", 82),
+                new Pokemon("Squirtle", 38),
+                new Pokemon("Mew", 85),
+                new Pokemon("Charmander", 62)
+        );
+
+        // Aplicando exactamente el patrón filter() + count() requerido
+        long cantidad = pokemones.stream()
+                .filter(p -> p.nivel() > 80)
+                .count();
+
+        // Operación secundaria para obtener los nombres y cumplir con el formato de salida
+        List<String> nombres = pokemones.stream()
+                .filter(p -> p.nivel() > 80)
+                .map(Pokemon::nombre)
+                .toList();
+
+        System.out.println("Pokémon con nivel > 80: " + cantidad);
+        System.out.println("(" + String.join(", ", nombres) + ")");
+    }
+
+    public static void main(String[] args) {
+        ejercicio5();
+    }
+}
