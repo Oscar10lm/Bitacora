@@ -5,12 +5,9 @@
 .idea/usage.statistics.xml
 .idea/dictionaries/
 .idea/httpRequests/
+.idea/.gitignore
+.idea/*.iml
 
 # Compilados
 target/
 out/
-
-# Archivos del sistema
-*.class
-*.jar
-*.war
