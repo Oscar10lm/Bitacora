@@ -1,1 +1,16 @@
+# IntelliJ IDEA - ignorar solo lo innecesario
 .idea/workspace.xml
+.idea/shelf/
+.idea/tasks.xml
+.idea/usage.statistics.xml
+.idea/dictionaries/
+.idea/httpRequests/
+
+# Compilados
+target/
+out/
+
+# Archivos del sistema
+*.class
+*.jar
+*.war
