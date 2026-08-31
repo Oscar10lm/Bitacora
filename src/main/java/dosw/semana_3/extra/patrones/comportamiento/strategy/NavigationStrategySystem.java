@@ -1,33 +1,5 @@
 package dosw.semana_3.extra.patrones.comportamiento.strategy;
 
-/**
- * ============================================================================
- * PATRÓN DE DISEÑO: STRATEGY (COMPORTAMIENTO)
- * ============================================================================
- *
- * DEFINICIÓN:
- * Es un patrón de diseño de comportamiento que te permite definir una familia 
- * de algoritmos, colocar cada uno de ellos en una clase separada y hacer sus 
- * objetos intercambiables.
- *
- * VENTAJAS CLAVE:
- * - Puedes cambiar de un algoritmo a otro durante el tiempo de ejecución.
- * - Aísla los detalles de implementación de un algoritmo del código que lo usa.
- * - Reemplaza la herencia (o los horribles bloques gigantes de if/switch) 
- *   por composición.
- * - Principio de Abierto/Cerrado: puedes introducir nuevas estrategias sin 
- *   cambiar el contexto.
- *
- * ----------------------------------------------------------------------------
- * EJERCICIO PRÁCTICO: APLICACIÓN DE NAVEGACIÓN (GPS)
- * ----------------------------------------------------------------------------
- * Una aplicación de navegación puede calcular rutas de distintas maneras.
- * El algoritmo de cálculo de ruta no debe estar acoplado a la aplicación, 
- * ya que puede cambiar según la preferencia del usuario en tiempo real:
- * - Ruta más Rápida (Prioriza autopistas)
- * - Ruta Panorámica/Escénica (Prioriza paisajes y carreteras secundarias)
- * - Ruta más Barata (Evita peajes)
- */
 public class NavigationStrategySystem {
 
     // ==========================================

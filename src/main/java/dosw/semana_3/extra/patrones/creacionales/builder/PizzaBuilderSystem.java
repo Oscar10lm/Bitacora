@@ -3,24 +3,6 @@ package dosw.semana_3.extra.patrones.creacionales.builder;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * ============================================================================
- * EJERCICIO PRÁCTICO: ARMADO DE PIZZAS (Builder)
- * ============================================================================
- *
- * Una pizzería arma pizzas a pedido. El proceso de preparación es el mismo 
- * (masa, salsa, ingredientes extra), pero el resultado final varía según el 
- * tipo de pizza solicitada.
- * Ejemplos: Pizza Margarita, Pizza Especial de la casa.
- * 
- * La pizzería quiere separar el proceso de construcción del objeto final.
- * 
- * Cada pizza está conformada por: 
- * - Tamaño
- * - Tipo de masa
- * - Salsa
- * - Ingredientes adicionales (lista: queso extra, pepperoni, champiñones, etc.)
- */
 public class PizzaBuilderSystem {
 
     // ==========================================

@@ -3,30 +3,6 @@ package dosw.semana_3.extra.patrones.comportamiento.command;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * ============================================================================
- * PATRÓN DE DISEÑO: COMMAND (COMPORTAMIENTO)
- * ============================================================================
- *
- * DEFINICIÓN:
- * Es un patrón de diseño de comportamiento que convierte una solicitud en un 
- * objeto independiente que contiene toda la información sobre la solicitud. 
- * 
- * VENTAJAS CLAVE:
- * - Esta transformación te permite parametrizar los métodos con diferentes 
- *   solicitudes (asignar comandos a botones arbitrarios).
- * - Retrasar o poner en cola la ejecución de una solicitud (Macro de comandos).
- * - Soportar operaciones que se pueden deshacer (Undo/Redo).
- * - Desacopla al objeto que invoca la operación del objeto que la sabe ejecutar.
- *
- * ----------------------------------------------------------------------------
- * EJERCICIO PRÁCTICO: PERSONAJE DE VIDEOJUEGO
- * ----------------------------------------------------------------------------
- * Un personaje de videojuego puede ejecutar diferentes acciones (Caminar, 
- * Saltar, Atacar, Defenderse). Cada acción se encapsula como un comando, 
- * de modo que el control del juego (GameController) pueda ejecutar cualquier 
- * acción sin conocer su implementación interna en el personaje.
- */
 public class GameCharacterCommandSystem {
 
     // ==========================================

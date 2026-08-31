@@ -1,35 +1,5 @@
 package dosw.semana_3.extra.patrones.estructurales.decorator;
 
-/**
- * ============================================================================
- * PATRÓN DE DISEÑO: DECORATOR (ESTRUCTURAL)
- * ============================================================================
- *
- * DEFINICIÓN:
- * Es un patrón de diseño estructural que te permite añadir funcionalidades a 
- * objetos colocando estos objetos dentro de objetos encapsuladores especiales 
- * (wrappers) que contienen estas funcionalidades.
- *
- * VENTAJAS CLAVE:
- * - Evita la herencia múltiple y la explosión de subclases (ej. no necesitas 
- *   crear clases como BarcoConRadarYMisiles, BarcoConBlindajeYRadar, etc.).
- * - Puedes añadir o eliminar responsabilidades de un objeto en tiempo de ejecución.
- * - Puedes combinar varios comportamientos envolviendo un objeto con múltiples 
- *   decoradores.
- * - Sigue el principio Single Responsibility Principle (SRP).
- *
- * ----------------------------------------------------------------------------
- * EJERCICIO PRÁCTICO: SIMULADOR NAVAL
- * ----------------------------------------------------------------------------
- * Cada barco tiene capacidades básicas como ataque, defensa y una descripción.
- * Puede ser equipado con módulos adicionales sin modificar su clase original:
- * - Blindaje reforzado →  + 30 en defensa
- * - Radar avanzado → +10 en ataque
- * - Misiles → +40 en ataque
- * - Sistema antitorpedos → +20 de ataque
- * 
- * Un mismo barco puede tener múltiples mejoras combinadas dinámicamente.
- */
 public class NavalSimulatorSystem {
 
     // ==========================================

@@ -1,40 +1,5 @@
 package dosw.semana_3.taller.patrones;
 
-/**
- * -------------------------------------------------------------------
- * PARTE III — IDENTIFICANDO PATRONES DE DISEÑO
- * #15 Integración con el Banco Antiguo
- * -------------------------------------------------------------------
- *
- * (1) SITUACIÓN:
- * Tenemos un sistema moderno que espera trabajar con una interfaz 
- * `PaymentProcessor` (pasando montos normales). Sin embargo, necesitamos 
- * integrarnos con un banco antiguo (`LegacyBankService`) que tiene métodos 
- * distintos, espera el dinero en centavos y no podemos modificar su código.
- *
- * (2) CATEGORÍA:
- * Patrón Estructural (Structural Pattern).
- *
- * (3) PATRÓN SELECCIONADO:
- * Adapter (Adaptador / Wrapper).
- *
- * (4) ¿POR QUÉ?:
- * El patrón Adapter se usa específicamente cuando tienes dos interfaces 
- * incompatibles que necesitan trabajar juntas y no puedes (o no quieres) 
- * modificar el código fuente de alguna de ellas (en este caso, el sistema legado).
- * Creamos una clase "Adaptador" que implementa la interfaz moderna que 
- * nuestro sistema espera, pero por dentro traduce y redirige esas llamadas 
- * a los métodos extraños del sistema antiguo (ej. multiplicando el monto por 
- * 100 para pasarlo a centavos).
- *
- * (5) ¿APLICA MÁS DE UN PATRÓN? (Comparación):
- * - Se podría confundir con **Facade** (Fachada). Ambos envuelven objetos 
- *   antiguos o complejos. Sin embargo, Facade busca *simplificar* un 
- *   subsistema muy grande (ocultar docenas de clases detrás de una sola). 
- *   El **Adapter** tiene un propósito más preciso: hacer que una interfaz 
- *   encaje con otra distinta que ya está predefinida, actuando como un 
- *   traductor entre dos piezas que no encajan.
- */
 public class Ejercicio15 {
 
     // --- IMPLEMENTACIÓN DEL PATRÓN ADAPTER ---

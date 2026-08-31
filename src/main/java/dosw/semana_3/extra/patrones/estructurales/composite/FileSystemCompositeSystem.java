@@ -3,22 +3,6 @@ package dosw.semana_3.extra.patrones.estructurales.composite;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * ============================================================================
- * EJERCICIO PRÁCTICO: SISTEMA DE ARCHIVOS (Composite)
- * ============================================================================
- *
- * Un explorador de archivos maneja archivos individuales y carpetas que 
- * pueden contener:
- * - Archivos
- * - Otras carpetas (carpetas dentro de carpetas)
- * 
- * El sistema debe poder calcular el tamaño total en KB de cualquier elemento, 
- * sin importar si es un archivo simple o una carpeta con muchos elementos anidados.
- * 
- * Para obtener el tamaño total de una carpeta es necesario recorrer todos sus 
- * elementos (archivos y subcarpetas) y sumar sus tamaños usando recursión.
- */
 public class FileSystemCompositeSystem {
 
     // ==========================================

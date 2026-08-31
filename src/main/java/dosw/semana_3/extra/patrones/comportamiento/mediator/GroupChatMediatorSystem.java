@@ -3,29 +3,6 @@ package dosw.semana_3.extra.patrones.comportamiento.mediator;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * ============================================================================
- * PATRÓN DE DISEÑO: MEDIATOR (COMPORTAMIENTO)
- * ============================================================================
- *
- * DEFINICIÓN:
- * Reduce las dependencias directas entre muchos objetos (acoplamiento caótico 
- * de tela de araña), forzando que se comuniquen únicamente a través de un 
- * objeto central (el mediador).
- *
- * VENTAJAS CLAVE:
- * - Centraliza la lógica de comunicación y control entre componentes.
- * - Reduce el acoplamiento (los componentes no necesitan conocer las clases de 
- *   los demás componentes, solo conocen al Mediador).
- * - Sigue el principio de Responsabilidad Única.
- *
- * ----------------------------------------------------------------------------
- * EJERCICIO PRÁCTICO M1: CHAT GRUPAL
- * ----------------------------------------------------------------------------
- * En un chat grupal, los usuarios no se envían mensajes directamente entre sí.
- * Todos envían sus mensajes a una sala de chat central (el mediador), que se 
- * encarga de distribuirlos a los demás participantes.
- */
 public class GroupChatMediatorSystem {
 
     // ==========================================

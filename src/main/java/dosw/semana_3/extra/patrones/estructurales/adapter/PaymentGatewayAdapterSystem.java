@@ -1,22 +1,5 @@
 package dosw.semana_3.extra.patrones.estructurales.adapter;
 
-/**
- * ============================================================================
- * EJERCICIO PRÁCTICO: SISTEMA DE PAGOS CON PASARELAS EXTERNAS (Adapter)
- * ============================================================================
- *
- * Una tienda en línea tiene un sistema de checkout que espera un método 
- * estándar: procesarPago(montoEnPesos). 
- * 
- * Se necesitan integrar dos pasarelas de pago internacionales de terceros 
- * (cuyas interfaces no se pueden modificar):
- * - PayGlobalAPI: su método es charge(amountInCents) y espera el monto en 
- *   centavos de dólar.
- * - EuroPay: su método es debitar(montoEnEuros) y espera el monto en euros.
- *
- * El sistema central no debe cambiar. Se debe unificar el cobro para ambas 
- * pasarelas mediante el patrón Adapter.
- */
 public class PaymentGatewayAdapterSystem {
 
     // ==========================================

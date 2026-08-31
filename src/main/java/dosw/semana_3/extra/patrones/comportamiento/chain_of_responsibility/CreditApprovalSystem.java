@@ -1,22 +1,5 @@
 package dosw.semana_3.extra.patrones.comportamiento.chain_of_responsibility;
 
-/**
- * ============================================================================
- * EJERCICIO PRÁCTICO: APROBACIÓN DE CRÉDITOS (Chain of Responsibility)
- * ============================================================================
- *
- * Un banco procesa solicitudes de préstamo mediante una cadena de validaciones:
- * 1. Verificación de identidad (documento válido)
- * 2. Revisión de historial crediticio (score mínimo)
- * 3. Verificación de capacidad de pago (ingresos suficientes)
- * 4. Aprobación final del oficial de crédito
- *
- * Cada validación aprueba y pasa a la siguiente, o rechaza la solicitud y 
- * detiene el proceso de inmediato.
- *
- * El solicitante no conoce cuál validación específica lo rechazó internamente 
- * ni cuántas validaciones existen en total en el banco.
- */
 public class CreditApprovalSystem {
 
     // ==========================================

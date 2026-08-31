@@ -4,18 +4,6 @@ import java.util.List;
 import java.util.Comparator;
 import java.util.stream.Collectors;
 
-/**PATRÓN: ORDENAMIENTO DE LISTAS
- * Uso:
- * "Dada una lista, organizar sus elementos de menor a mayor (ascendente)
- * o de mayor a menor (descendente) y guardarlos en una lista nueva".
- *
- * ESTRUCTURA CLAVE:
- * 1. .stream() -> Abre la lista.
- * 2. .sorted() -> Ordena de menor a mayor por defecto.
- *    .sorted(Comparator.reverseOrder()) -> Ordena de mayor a menor.
- * 3. .collect(Collectors.toList()) -> Empaca la lista ya ordenada.
- */
-
 public class Ejercicio7 {
 
     /**

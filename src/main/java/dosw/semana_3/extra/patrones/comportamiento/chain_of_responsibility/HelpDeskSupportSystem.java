@@ -1,24 +1,5 @@
 package dosw.semana_3.extra.patrones.comportamiento.chain_of_responsibility;
 
-/**
- * ============================================================================
- * EJERCICIO PRÁCTICO: SISTEMA DE SOPORTE TÉCNICO (Chain of Responsibility)
- * ============================================================================
- *
- * Una empresa de tecnología atiende tickets de soporte mediante una cadena 
- * de niveles de atención:
- * 1. Soporte Nivel 1 (problemas básicos, ej. reinicios, contraseñas)
- * 2. Soporte Nivel 2 (problemas de configuración)
- * 3. Soporte Nivel 3 (problemas técnicos avanzados)
- * 4. Escalamiento a Ingeniería (bugs del producto)
- *
- * Cada nivel:
- * - Puede resolver el ticket y detener el proceso.
- * - O escalarlo al siguiente nivel si no tiene la capacidad de resolverlo.
- *
- * El cliente que reportó el ticket no conoce en qué nivel fue resuelto ni 
- * cuántos niveles existen.
- */
 public class HelpDeskSupportSystem {
 
     // ==========================================

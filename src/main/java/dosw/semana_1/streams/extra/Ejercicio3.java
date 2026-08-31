@@ -2,22 +2,6 @@
 
 import java.util.List;
 
-/**PATRÓN: EXTRACCIÓN Y TRANSFORMACIÓN DE ATRIBUTOS (PROYECCIÓN)
- * Uso:
- * "Dada una lista de objetos (ej. Usuarios), filtrar por una condición,
- * extraer un atributo específico de ese objeto (ej. el nombre), transformarlo
- * y ordenar los resultados".
- *
- * ESTRUCTURA CLAVE:
- * 1. .stream() -> Abre la lista.
- * 2. .filter() -> Selecciona los objetos que cumplen la regla. Se puede usar 'Referencia de Método' (Clase::metodoBooleano).
- * 3. .map() -> Convierte el objeto completo en solo una parte de él (ej. pasar de User a String).
- *    - Opción A: Encadenar múltiples .map() separando pasos (uno para extraer, otro para mayúsculas).
- *    - Opción B: Un solo .map() con una función lambda que hace todo el trabajo a la vez.
- * 4. .sorted() -> Ordena alfabéticamente (ya que ahora el flujo contiene Strings).
- * 5. .toList() -> Empaca los Strings resultantes en una nueva lista.
- */
-
 public class Ejercicio3 {
 
     // Se define una estructura Record básica para simular los datos de entrada del ejercicio

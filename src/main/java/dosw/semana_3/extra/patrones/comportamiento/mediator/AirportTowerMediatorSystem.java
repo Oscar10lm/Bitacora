@@ -3,16 +3,6 @@ package dosw.semana_3.extra.patrones.comportamiento.mediator;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * ============================================================================
- * EJERCICIO PRÁCTICO M3: TORRE DE CONTROL DE AEROPUERTO (Mediator)
- * ============================================================================
- *
- * Varios aviones necesitan coordinarse para aterrizar y despegar sin chocar 
- * entre sí. En vez de que los aviones se comuniquen directamente entre ellos 
- * (lo cual sería un caos en el aire), todos se comunican con una torre de 
- * control central (Mediador) que coordina el orden de las operaciones.
- */
 public class AirportTowerMediatorSystem {
 
     // ==========================================

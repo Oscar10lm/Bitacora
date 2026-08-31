@@ -3,20 +3,6 @@ package dosw.semana_3.extra.patrones.creacionales.prototype;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * ============================================================================
- * EJERCICIO PRÁCTICO: ENEMIGOS EN UN VIDEOJUEGO (Prototype)
- * ============================================================================
- *
- * Un videojuego tiene un enemigo base ("Orco") con estadísticas configuradas 
- * (vida, ataque, defensa) que tardan en calcularse al inicio del nivel (basado 
- * en la dificultad del jugador). 
- * 
- * Cuando aparecen oleadas de 10 orcos idénticos, el juego no debe recalcular 
- * las estadísticas cada vez — debe clonar el orco base para generar cada 
- * nuevo enemigo de la oleada, con la posibilidad de ajustar pequeños detalles 
- * después (como la posición X, Y en el mapa).
- */
 public class VideoGameEnemySystem {
 
     // ==========================================

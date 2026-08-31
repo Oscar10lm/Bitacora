@@ -3,19 +3,6 @@ package dosw.semana_3.extra.patrones.creacionales.prototype;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * ============================================================================
- * EJERCICIO PRÁCTICO: CONFIGURACIONES DE REPORTES (Prototype)
- * ============================================================================
- *
- * Un sistema de reportes financieros tiene una configuración base "Reporte 
- * Mensual Estándar" con muchos parámetros ya definidos (formato, columnas, 
- * filtros, permisos). 
- * 
- * Los analistas necesitan crear variantes de ese reporte (ej. "Reporte Mensual 
- * - Región Norte") cambiando solo uno o dos filtros, sin tener que configurar 
- * todo desde cero cada vez. El sistema debe permitir clonar la configuración base.
- */
 public class ReportConfigurationSystem {
 
     // ==========================================

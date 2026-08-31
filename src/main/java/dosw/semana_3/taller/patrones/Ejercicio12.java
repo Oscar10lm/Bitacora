@@ -1,39 +1,5 @@
 package dosw.semana_3.taller.patrones;
 
-/**
- * -------------------------------------------------------------------
- * PARTE III — IDENTIFICANDO PATRONES DE DISEÑO
- * #12 Múltiples Formas de Pago
- * -------------------------------------------------------------------
- *
- * (1) SITUACIÓN:
- * El flujo de compra es idéntico, pero el algoritmo final de cobro varía 
- * dinámicamente según si el cliente elige Tarjeta, PSE, PayPal o Nequi.
- *
- * (2) CATEGORÍA:
- * Patrón de Comportamiento (Behavioral Pattern).
- *
- * (3) PATRÓN SELECCIONADO:
- * Strategy (Estrategia).
- *
- * (4) ¿POR QUÉ?:
- * El patrón Strategy permite definir una familia de algoritmos (las diferentes 
- * pasarelas de pago), encapsular cada uno de ellos en una clase separada y 
- * hacerlos intercambiables en tiempo de ejecución. La clase de contexto 
- * (el carrito de compras) delega el trabajo al objeto Strategy en lugar de 
- * implementar múltiples `if-else` o un gran bloque `switch`.
- *
- * (5) ¿APLICA MÁS DE UN PATRÓN? (Comparación):
- * Podría pensarse en el patrón **Template Method** (Método Plantilla).
- * ¿Por qué Strategy es MEJOR en este caso?
- * - Template Method se basa en **herencia**: Define un esqueleto de algoritmo 
- *   en una clase base y deja que las subclases reescriban ciertos pasos. Esto 
- *   significaría tener un `CompraConTarjeta`, `CompraConNequi`, etc.
- * - Strategy se basa en **composición**: El algoritmo entero se abstrae en 
- *   otra clase que se inyecta. Esto es mucho más flexible, permite cambiar 
- *   la estrategia en caliente (en tiempo de ejecución) y favorece el 
- *   principio OCP (visto en el Ejercicio 6, donde usamos precisamente Strategy).
- */
 public class Ejercicio12 {
 
     // --- IMPLEMENTACIÓN DEL PATRÓN STRATEGY ---

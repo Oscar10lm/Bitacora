@@ -3,16 +3,6 @@
 import java.util.List;
 import java.util.stream.Collectors;
 
-    /**PATRÓN: FILTRADO Y CREACIÓN DE NUEVA LISTA
-     * Uso:
-     * "Dada una lista, saca los elementos que cumplan X condición y guárdalos".
-     *
-     * ESTRUCTURA CLAVE:
-     * 1. .stream() -> Abre la lista para empezar a procesar elemento por elemento.
-     * 2. .filter( e -> condición ) -> Tu condición 'if'. Solo pasan los que den true.
-     * 3. .collect(Collectors.toList()) -> Cierra el proceso empacando los que pasaron en una nueva List.
-     */
-
 public class Ejercicio1 {
 
     /**

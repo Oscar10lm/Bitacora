@@ -3,17 +3,6 @@ package dosw.semana_3.extra.patrones.estructurales.proxy;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * ============================================================================
- * EJERCICIO PRÁCTICO Px3: CACHÉ DE CONSULTAS DB (Cache Proxy)
- * ============================================================================
- *
- * Un sistema que consulta datos costosos a una base de datos (por ejemplo, 
- * un reporte pesado) no debe repetir la misma consulta si ya se hizo 
- * recientemente. 
- * Un intermediario (Proxy) debe devolver el resultado guardado en caché si 
- * existe, o consultar la base de datos real solo si es necesario.
- */
 public class DatabaseCacheProxySystem {
 
     // ==========================================

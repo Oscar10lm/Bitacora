@@ -1,17 +1,5 @@
 package dosw.semana_3.extra.patrones.estructurales.facade;
 
-/**
- * ============================================================================
- * EJERCICIO PRÁCTICO F3: ARRANQUE DE UN COMPUTADOR (Facade)
- * ============================================================================
- *
- * Encender un computador implica inicializar la CPU, cargar la memoria, 
- * verificar el disco duro y cargar el sistema operativo — varios componentes 
- * con su propia lógica de arranque. 
- * 
- * Se debe ofrecer un método simple encenderComputador() (El botón físico de 
- * Power) que coordine todo el proceso ocultando la enorme complejidad.
- */
 public class ComputerBootFacadeSystem {
 
     // ==========================================

@@ -5,15 +5,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- * ============================================================================
- * EJERCICIO PRÁCTICO Fl2: EDITOR DE TEXTO CON CARACTERES (Flyweight)
- * ============================================================================
- *
- * Un editor de texto debe representar miles de caracteres en un documento. 
- * Cada carácter comparte la misma fuente y tamaño (estado intrínseco), pero 
- * cada uno tiene su propia posición/letra en el documento (estado extrínseco).
- */
 public class TextEditorFlyweightSystem {
 
     // ==========================================

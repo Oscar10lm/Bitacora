@@ -2,18 +2,6 @@
 
 import java.util.List;
 
-/**PATRÓN: ACUMULACIÓN / REDUCCIÓN A UN ÚNICO VALOR
- * Uso:
- * "Dada una lista de números, combinarlos todos consecutivamente para
- * obtener un único resultado final (como sumar el nivel de todo un equipo)".
- *
- * ESTRUCTURA CLAVE:
- * 1. .stream() -> Abre la lista de números.
- * 2. .reduce( valorInicial, operación ) -> Toma un valor inicial (0 para sumas)
- *    y una operación (Integer::sum) para ir acumulando cada número de la lista
- *    hasta devolver un único entero. Cierra el proceso.
- */
-
 public class Ejercicio3 {
 
     /**

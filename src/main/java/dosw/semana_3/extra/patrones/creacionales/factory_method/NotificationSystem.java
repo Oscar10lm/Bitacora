@@ -1,20 +1,5 @@
 package dosw.semana_3.extra.patrones.creacionales.factory_method;
 
-/**
- * ============================================================================
- * EJERCICIO PRÁCTICO: SISTEMA DE NOTIFICACIONES (Factory Method)
- * ============================================================================
- *
- * Una aplicación debe enviar notificaciones a los usuarios por distintos 
- * canales:
- * - Notificación por Email
- * - Notificación por SMS
- * - Notificación push (móvil)
- *
- * El sistema no debe acoplarse a las clases concretas de cada tipo de 
- * notificación. El código que dispara el envío no debe saber si es un 
- * email, un SMS o un push.
- */
 public class NotificationSystem {
 
     // ==========================================

@@ -1,28 +1,5 @@
 package dosw.semana_3.extra.patrones.estructurales.proxy;
 
-/**
- * ============================================================================
- * PATRÓN DE DISEÑO: PROXY (ESTRUCTURAL)
- * ============================================================================
- *
- * DEFINICIÓN:
- * Proporciona un objeto sustituto (proxy) que controla el acceso a otro objeto 
- * real, permitiendo agregar lógica adicional (carga diferida, seguridad, caché) 
- * sin que el cliente note la diferencia.
- *
- * VENTAJAS CLAVE:
- * - El proxy implementa la misma interfaz que el objeto real, por lo que 
- *   es transparente para el cliente.
- * - Permite retrasar la inicialización de objetos muy pesados hasta que 
- *   realmente se necesiten (Virtual Proxy).
- *
- * ----------------------------------------------------------------------------
- * EJERCICIO PRÁCTICO Px1: GALERÍA DE IMÁGENES (Virtual Proxy - Carga Diferida)
- * ----------------------------------------------------------------------------
- * Una galería de imágenes en alta resolución no debe cargar todas las 
- * imágenes de disco al iniciar (es muy costoso). Solo debe cargar una imagen 
- * real la primera vez que se solicita mostrarla, y reutilizarla después.
- */
 public class LazyImageProxySystem {
 
     // ==========================================

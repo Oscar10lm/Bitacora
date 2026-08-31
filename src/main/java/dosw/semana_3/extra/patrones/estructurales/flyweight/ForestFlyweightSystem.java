@@ -5,28 +5,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- * ============================================================================
- * PATRÓN DE DISEÑO: FLYWEIGHT (ESTRUCTURAL)
- * ============================================================================
- *
- * DEFINICIÓN:
- * Permite mantener muchos objetos en memoria compartiendo eficientemente la 
- * parte de su estado que es común entre todos ellos (el estado "intrínseco"), 
- * en vez de duplicarla en cada instancia. Solo se guarda por separado lo que 
- * varía (el estado "extrínseco").
- *
- * VENTAJAS CLAVE:
- * - Ahorro masivo de memoria RAM.
- * - Mejora de rendimiento al tener menos objetos pesados que instanciar.
- *
- * ----------------------------------------------------------------------------
- * EJERCICIO PRÁCTICO Fl1: RENDERIZADO DE UN BOSQUE
- * ----------------------------------------------------------------------------
- * Un videojuego debe dibujar miles de árboles en un bosque. Cada árbol comparte 
- * el mismo modelo 3D y textura (datos pesados, estado intrínseco), pero cada 
- * uno tiene su propia posición (x, y) en el mapa (estado extrínseco).
- */
 public class ForestFlyweightSystem {
 
     // ==========================================

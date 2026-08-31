@@ -1,28 +1,5 @@
 package dosw.semana_3.extra.patrones.estructurales.facade;
 
-/**
- * ============================================================================
- * PATRÓN DE DISEÑO: FACADE (ESTRUCTURAL)
- * ============================================================================
- *
- * DEFINICIÓN:
- * Proporciona una interfaz simple y unificada para un subsistema complejo 
- * (con muchas clases e interacciones internas), ocultando esa complejidad al 
- * cliente. 
- *
- * VENTAJAS CLAVE:
- * - Aísla a los clientes de los componentes del subsistema complejo.
- * - Reduce el número de objetos que los clientes manejan.
- * - Promueve el bajo acoplamiento entre los subsistemas y los clientes.
- *
- * ----------------------------------------------------------------------------
- * EJERCICIO PRÁCTICO F1: CINE EN CASA (Home Theater)
- * ----------------------------------------------------------------------------
- * Encender un sistema de "home theater" implica coordinar el proyector, 
- * las luces, el sistema de sonido y el reproductor de streaming.
- * La Fachada ofrece un método simple verPelicula() que internamente 
- * coordina todo este subsistema.
- */
 public class HomeTheaterFacadeSystem {
 
     // ==========================================

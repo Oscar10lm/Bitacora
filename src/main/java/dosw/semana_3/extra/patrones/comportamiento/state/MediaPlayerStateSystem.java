@@ -1,18 +1,5 @@
 package dosw.semana_3.extra.patrones.comportamiento.state;
 
-/**
- * ============================================================================
- * EJERCICIO PRÁCTICO S3: REPRODUCTOR MULTIMEDIA (State)
- * ============================================================================
- *
- * Un reproductor de video cambia su comportamiento según su estado:
- * - Reproduciendo (Playing)
- * - Pausado (Paused)
- * - Detenido (Stopped)
- *
- * Presionar el botón "Play/Pause" hace algo distinto según en qué estado 
- * se encuentre actualmente el reproductor.
- */
 public class MediaPlayerStateSystem {
 
     // ==========================================

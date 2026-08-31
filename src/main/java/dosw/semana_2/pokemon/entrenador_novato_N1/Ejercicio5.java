@@ -2,18 +2,6 @@
 
 import java.util.List;
 
-/**PATRÓN: CONTEO CONDICIONAL (FILTER + COUNT)
- * Uso:
- * "Dada una lista, saber CUÁNTOS elementos cumplen con una condición
- * específica, obteniendo directamente el número total en lugar de una lista".
- *
- * ESTRUCTURA CLAVE:
- * 1. .stream() -> Abre la lista de objetos.
- * 2. .filter( p -> p.nivel() > 80 ) -> Deja pasar solo los elementos que cumplen la regla.
- * 3. .count() -> Cuenta cuántos elementos sobrevivieron al filtro.
- *    Devuelve un dato de tipo 'long' y cierra el proceso.
- */
-
 public class Ejercicio5 {
 
     // Record para estructurar los datos de entrada

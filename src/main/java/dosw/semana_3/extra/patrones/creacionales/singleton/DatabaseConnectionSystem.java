@@ -1,19 +1,5 @@
 package dosw.semana_3.extra.patrones.creacionales.singleton;
 
-/**
- * ============================================================================
- * EJERCICIO PRÁCTICO: GESTOR DE CONEXIÓN A BASE DE DATOS (Singleton)
- * ============================================================================
- *
- * Una aplicación necesita conectarse a una base de datos. Crear una conexión 
- * es costoso (tiempo de red, autenticación, recursos en el motor de BD).
- * 
- * Abrir múltiples conexiones innecesarias agotaría el "pool" de conexiones 
- * del servidor de base de datos. El sistema debe garantizar que exista una 
- * única conexión compartida (el canal físico) que sea reutilizada por todas 
- * las partes del programa (Servicio de Usuarios, Servicio de Productos, etc.) 
- * que necesiten ejecutar consultas.
- */
 public class DatabaseConnectionSystem {
 
     // ==========================================

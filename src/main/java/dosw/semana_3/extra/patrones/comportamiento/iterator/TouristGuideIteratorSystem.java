@@ -3,32 +3,6 @@ package dosw.semana_3.extra.patrones.comportamiento.iterator;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * ============================================================================
- * PATRÓN DE DISEÑO: ITERATOR (COMPORTAMIENTO)
- * ============================================================================
- *
- * DEFINICIÓN:
- * Es un patrón de diseño de comportamiento que te permite recorrer elementos 
- * de una colección sin exponer su representación subyacente (lista, pila, 
- * árbol, etc.).
- *
- * VENTAJAS CLAVE:
- * - Extrae el comportamiento de recorrido de una colección y lo coloca en un 
- *   objeto independiente llamado iterador.
- * - Varios iteradores pueden recorrer la misma colección al mismo tiempo.
- * - Promueve el Single Responsibility Principle al limpiar el código de la 
- *   colección principal.
- * - Promueve el Open/Closed Principle: puedes implementar nuevos tipos de 
- *   recorridos sin modificar la colección original.
- *
- * ----------------------------------------------------------------------------
- * EJERCICIO PRÁCTICO: GUÍA TURÍSTICO EN ROMA
- * ----------------------------------------------------------------------------
- * Un turista quiere explorar distintos lugares emblemáticos de Roma.
- * El recorrido debe poder iterarse sin exponer la estructura interna que 
- * almacena los lugares.
- */
 public class TouristGuideIteratorSystem {
 
     // ==========================================

@@ -1,21 +1,5 @@
 package dosw.semana_3.extra.patrones.comportamiento.iterator;
 
-/**
- * ============================================================================
- * EJERCICIO PRÁCTICO: LISTA DE REPRODUCCIÓN (Iterator)
- * ============================================================================
- *
- * Una aplicación de música tiene una lista de reproducción con canciones:
- * - Canción 1
- * - Canción 2
- * - Canción 3
- * - Canción 4
- *
- * El usuario debe poder recorrer la lista de reproducción canción por canción 
- * (obtener la siguiente) sin conocer si internamente las canciones están 
- * guardadas en un arreglo (Array), una lista enlazada, o cualquier otra 
- * estructura.
- */
 public class MusicPlaylistIteratorSystem {
 
     // ==========================================

@@ -1,15 +1,5 @@
 package dosw.semana_3.extra.patrones.comportamiento.memento;
 
-/**
- * ============================================================================
- * EJERCICIO PRÁCTICO Me2: VIDEOJUEGO CON PUNTOS DE GUARDADO (Memento)
- * ============================================================================
- *
- * Un videojuego permite guardar el progreso del jugador (vida, posición, 
- * inventario) en un punto de control (Checkpoint), y restaurarlo más adelante 
- * si el jugador muere, sin exponer los detalles internos del estado del 
- * jugador al sistema de guardado.
- */
 public class VideoGameMementoSystem {
 
     // ==========================================

@@ -1,40 +1,5 @@
 package dosw.semana_3.taller.patrones;
 
-/**
- * -------------------------------------------------------------------
- * PARTE III — IDENTIFICANDO PATRONES DE DISEÑO
- * #16 Mensajes en una App de Chat
- * -------------------------------------------------------------------
- *
- * (1) SITUACIÓN:
- * Tenemos dos dimensiones que pueden variar independientemente: 
- * el Tipo de Mensaje (Texto, Voz, Video) y el Algoritmo de Compresión 
- * (MP3, AAC, H.264, etc.). Queremos combinarlos libremente.
- *
- * (2) CATEGORÍA:
- * Patrón Estructural (Structural Pattern).
- *
- * (3) PATRÓN SELECCIONADO:
- * Bridge (Puente).
- *
- * (4) ¿POR QUÉ?:
- * El patrón Bridge es la solución de libro de texto cuando tienes dos o más 
- * dimensiones ortogonales (independientes) que necesitas combinar. Si 
- * intentáramos resolver esto con herencia tradicional, sufriríamos una 
- * "explosión de subclases" creando clases como `VideoMessageH264`, 
- * `VideoMessageHEVC`, `VoiceMessageMP3`, etc.
- * Bridge soluciona esto dividiendo la lógica en dos jerarquías de clases 
- * separadas: la Abstracción (El Mensaje) y la Implementación (El Compresor). 
- * Luego, se conectan mediante composición (El mensaje "tiene un" compresor).
- *
- * (5) ¿APLICA MÁS DE UN PATRÓN? (Comparación):
- * - Podría parecerse a **Strategy**, y de hecho usan un mecanismo similar 
- *   (composición e inyección). Sin embargo, Strategy se enfoca en intercambiar 
- *   el comportamiento de *una* clase. Bridge está diseñado estructuralmente 
- *   para hacer crecer *dos jerarquías de clases independientes* a la vez, 
- *   permitiendo que crees nuevos tipos de mensajes y nuevos compresores 
- *   sin que una jerarquía afecte a la otra.
- */
 public class Ejercicio16 {
 
     // --- IMPLEMENTACIÓN DEL PATRÓN BRIDGE ---

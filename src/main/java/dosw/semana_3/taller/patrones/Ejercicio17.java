@@ -1,39 +1,5 @@
 package dosw.semana_3.taller.patrones;
 
-/**
- * -------------------------------------------------------------------
- * PARTE III — IDENTIFICANDO PATRONES DE DISEÑO
- * #17 Construcción de Vehículos Configurables
- * -------------------------------------------------------------------
- *
- * (1) SITUACIÓN:
- * Tenemos vehículos con múltiples parámetros de configuración (motor, 
- * transmisión, color, GPS, sonido, etc.), donde muchos son opcionales. 
- * El constructor clásico requeriría 15 argumentos, lo cual es inmanejable 
- * y propenso a errores (anti-patrón "Telescoping Constructor").
- *
- * (2) CATEGORÍA:
- * Patrón Creacional (Creational Pattern).
- *
- * (3) PATRÓN SELECCIONADO:
- * Builder (Constructor).
- *
- * (4) ¿POR QUÉ?:
- * El patrón Builder está diseñado específicamente para aislar la construcción 
- * de un objeto complejo de su representación. En lugar de pasar decenas de 
- * parámetros a un constructor, usamos un objeto intermedio (el Builder) 
- * que nos permite configurar el vehículo paso a paso usando métodos claros 
- * y legibles (ej. `.setEngine()`, `.addGps()`). Solo invocamos el método 
- * final `.build()` cuando hemos terminado de configurarlo.
- *
- * (5) ¿APLICA MÁS DE UN PATRÓN? (Comparación):
- * - Podría evaluarse el uso de **Factory Method**. Sin embargo, la fábrica 
- *   es ideal cuando la creación del objeto es de "un solo paso" (entregas el 
- *   parámetro y te devuelve el objeto listo). Cuando el objeto requiere 
- *   mucha configuración opcional paso a paso, la fábrica sufriría del mismo 
- *   problema de los 15 parámetros, por lo que **Builder** es abrumadoramente 
- *   superior en este caso.
- */
 public class Ejercicio17 {
 
     // --- IMPLEMENTACIÓN DEL PATRÓN BUILDER ---

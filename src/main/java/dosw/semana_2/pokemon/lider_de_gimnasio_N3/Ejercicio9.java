@@ -2,19 +2,6 @@
 
 import java.util.List;
 
-/**PATRÓN: FILTRADO DE OBJETOS COMPLEJOS (FILTER)
- * Uso:
- * "Dada una lista de objetos estructurados, evaluar un umbral en uno
- * de sus atributos numéricos y extraer los elementos que lo superen,
- * dándoles un formato visual específico".
- *
- * ESTRUCTURA CLAVE:
- * 1. .stream() -> Abre la lista.
- * 2. .filter( p -> p.getPoderCombate() > 500 ) -> Filtra evaluando el atributo mediante su getter público.
- * 3. .map() -> Transforma el objeto en un texto con el formato "Nombre(PC)".
- * 4. .toList() -> Empaca los resultados en una nueva lista.
- */
-
 public class Ejercicio9 {
 
     /**

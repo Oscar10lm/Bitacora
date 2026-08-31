@@ -2,17 +2,6 @@
 
 import java.util.List;
 
-    /**PATRÓN: ACUMULACIÓN / REDUCCIÓN A UN ÚNICO VALOR
-     * Uso:
-     * "Dada una lista de números o valores, combínalos todos (sumando,
-     * multiplicando, etc.) para obtener un único resultado final".
-     *
-     * ESTRUCTURA CLAVE:
-     * 1. .stream() -> Abre la lista.
-     * 2. .reduce( valorInicial, operación ) -> Acumula los valores empezando desde
-     *    el 'valorInicial' (ej. 0 para sumas) aplicando la operación dada. Cierra el proceso.
-     */
-
 public class Ejercicio4 {
 
     /**

@@ -1,15 +1,5 @@
 package dosw.semana_3.extra.patrones.estructurales.proxy;
 
-/**
- * ============================================================================
- * EJERCICIO PRÁCTICO Px2: CONTROL DE ACCESO (Protection Proxy)
- * ============================================================================
- *
- * Un sistema de documentos corporativos debe verificar si el usuario tiene 
- * permisos antes de permitirle abrir un documento sensible. 
- * Sin modificar la clase original del documento, un intermediario (Proxy) 
- * debe validar el acceso antes de delegar la apertura real.
- */
 public class ProtectedDocumentProxySystem {
 
     // ==========================================

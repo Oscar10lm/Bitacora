@@ -2,17 +2,6 @@
 
 import java.util.List;
 
-/**PATRÓN: COMPROBACIÓN NEGATIVA (¿NINGUNO CUMPLE?)
- * Uso:
- * "Dada una lista, garantizar que NINGÚN elemento cumpla con una condición
- * (asegurarse de que la lista esté 'limpia' de algo)".
- *
- * ESTRUCTURA CLAVE:
- * 1. .stream() -> Abre la lista.
- * 2. .noneMatch( e -> condición ) -> Devuelve true SÓLO si ningún elemento coincide.
- *    Cierra el proceso.
- */
-
 public class Ejercicio15 {
 
     /**

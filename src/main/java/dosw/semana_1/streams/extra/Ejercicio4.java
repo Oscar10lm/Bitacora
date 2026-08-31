@@ -2,21 +2,6 @@
 
 import java.util.List;
 
-/**PATRÓN: FILTRADO POR CONDICIÓN NUMÉRICA Y EXTRACCIÓN
- * Uso:
- * "Dada una lista de objetos complejos, descarta los que no cumplan una
- * regla matemática (ej. mayor a X, menor a Y) en uno de sus atributos,
- * y luego quédate solo con el nombre o dato que te interesa de los que pasaron".
- *
- * ESTRUCTURA CLAVE:
- * 1. .stream() -> Abre la lista de objetos.
- * 2. .filter( u -> u.age() >= 18 ) -> Aplica la condición numérica usando el getter del atributo.
- * 3. .map() -> Extrae el atributo final que necesitas.
- *    - Opción A: Referencia de método (Clase::metodo).
- *    - Opción B: Expresión Lambda (u -> u.metodo()).
- * 4. .toList() -> Empaca los resultados extraídos en una lista.
- */
-
 public class Ejercicio4 {
 
     // Se define el Record Usuario basado en la imagen para poder ejecutar el código

@@ -3,21 +3,6 @@ package dosw.semana_3.extra.patrones.comportamiento.observer;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * ============================================================================
- * EJERCICIO PRÁCTICO: SISTEMA DE ACCIONES BURSÁTILES (Observer)
- * ============================================================================
- *
- * Una acción en bolsa (Sujeto) notifica a todos los inversionistas suscritos 
- * (Observadores) cada vez que su precio cambia.
- * 
- * Esto permite que cada inversionista reaccione a su manera:
- * - Uno puede vender o comprar automáticamente (Inversor Agresivo/Bot).
- * - Otro simplemente registra el historial en una libreta (Inversor Conservador).
- * 
- * Todo esto ocurre sin que la acción conozca quiénes son los inversionistas 
- * ni cómo están reaccionando, manteniendo el desacoplamiento total.
- */
 public class StockMarketObserverSystem {
 
     // ==========================================

@@ -2,19 +2,6 @@
 
 import java.util.List;
 
-/**PATRÓN: TRANSFORMACIÓN BÁSICA (MAPEO)
- * Uso:
- * "Dada una lista de elementos (ej. textos), aplica un cambio uniforme
- * a todos y cada uno de ellos (como convertirlos a mayúsculas) y
- * guarda el resultado".
- *
- * ESTRUCTURA CLAVE:
- * 1. .stream() -> Abre la lista para empezar a procesar.
- * 2. .map() -> Ejecuta la transformación. Puedes usar la referencia de
- *    método (String::toUpperCase) para que el código quede más limpio.
- * 3. .toList() -> Empaca los textos ya transformados en una nueva lista.
- */
-
 public class Ejercicio2 {
 
     /**

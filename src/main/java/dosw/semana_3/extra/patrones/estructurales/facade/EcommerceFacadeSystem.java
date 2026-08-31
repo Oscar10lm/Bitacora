@@ -1,17 +1,5 @@
 package dosw.semana_3.extra.patrones.estructurales.facade;
 
-/**
- * ============================================================================
- * EJERCICIO PRÁCTICO F2: COMPRA EN LÍNEA (Facade)
- * ============================================================================
- *
- * Realizar un pedido en una tienda en línea implica verificar inventario, 
- * procesar el pago, generar la factura y notificar al almacén para el envío 
- * (Varios subsistemas independientes).
- * 
- * Se debe ofrecer un método simple realizarPedido() que coordine todo esto 
- * sin que el cliente (el código frontend o móvil) conozca cada subsistema.
- */
 public class EcommerceFacadeSystem {
 
     // ==========================================

@@ -1,27 +1,5 @@
 package dosw.semana_3.extra.patrones.estructurales.decorator;
 
-/**
- * ============================================================================
- * EJERCICIO PRÁCTICO: BEBIDAS DE UNA CAFETERÍA (Decorator)
- * ============================================================================
- *
- * Una cafetería vende bebidas base con un costo definido, que pueden 
- * personalizarse con extras sin modificar la clase original de la bebida.
- *
- * Bebidas base: 
- * - Café
- * - Té
- * 
- * Extras disponibles (añaden costo y modifican la descripción):
- * - Leche → +$1500
- * - Shot de espresso extra → +$2500
- * - Sirope de vainilla → +$1000
- * - Crema batida → +$1800
- *
- * Un mismo pedido puede tener múltiples extras combinados dinámicamente, 
- * agregados en el momento de pedir. No se permite crear subclases como 
- * CafeConLecheYVainilla.
- */
 public class CoffeeShopDecoratorSystem {
 
     // ==========================================

@@ -2,25 +2,6 @@ package dosw.semana_3.extra.patrones.comportamiento.command;
 
 import java.util.Stack;
 
-/**
- * ============================================================================
- * EJERCICIO PRÁCTICO: CONTROL REMOTO UNIVERSAL (Command)
- * ============================================================================
- *
- * Un control remoto universal debe poder operar distintos dispositivos del 
- * hogar mediante botones configurables:
- * - Encender luz
- * - Apagar luz
- * - Subir volumen del televisor
- * - Bajar volumen del televisor
- *
- * Cada acción se encapsula como un comando, de modo que el control remoto 
- * pueda ejecutar cualquier botón sin conocer los detalles internos de cómo 
- * la luz o el televisor realizan la acción. 
- * 
- * Además, el sistema debe permitir DESHACER la última acción ejecutada 
- * (ej. si se encendió la luz, deshacer la apaga).
- */
 public class UniversalRemoteCommandSystem {
 
     // ==========================================

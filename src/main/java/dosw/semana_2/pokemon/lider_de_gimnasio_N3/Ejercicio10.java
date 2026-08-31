@@ -3,17 +3,6 @@
 import java.util.List;
 import java.util.stream.Collectors;
 
-/**PATRÓN: EXTRACCIÓN DE ATRIBUTO (MAP + COLLECT)
- * Uso:
- * "Dada una lista de objetos complejos, extraer un solo dato o atributo
- * de cada uno (como el nombre) para crear una lista más simple y manejable".
- *
- * ESTRUCTURA CLAVE:
- * 1. .stream() -> Abre la lista de objetos.
- * 2. .map( Pokemon::getNombre ) -> Transforma el flujo, cambiando el objeto completo por únicamente su nombre en formato String.
- * 3. .collect(Collectors.toList()) -> Empaca los textos resultantes en una nueva lista (tal como sugiere el hint del ejercicio).
- */
-
 public class Ejercicio10 {
 
     /**

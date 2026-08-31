@@ -5,16 +5,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- * ============================================================================
- * EJERCICIO PRÁCTICO Fl3: SISTEMA DE PARTÍCULAS - EXPLOSIONES (Flyweight)
- * ============================================================================
- *
- * Un videojuego genera cientos de partículas para simular una explosión. 
- * Todas las partículas del mismo tipo de explosión comparten la misma textura 
- * y color base (estado intrínseco), pero cada una tiene su propia posición 
- * y velocidad (estado extrínseco). 
- */
 public class ParticleSystemFlyweightSystem {
 
     // ==========================================

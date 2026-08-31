@@ -2,16 +2,6 @@
 
 import java.util.List;
 
-    /**PATRÓN: RECORRIDO Y EJECUCIÓN DE ACCIÓN (ITERACIÓN)
-     * Uso:
-     * "Dada una lista, recorre todos los elementos y ejecuta una acción
-     * (como imprimir en consola) por cada uno de ellos, sin crear una nueva lista".
-     *
-     * ESTRUCTURA CLAVE:
-     * 1. .stream() -> Abre la lista para empezar a procesar elemento por elemento.
-     * 2. .forEach( e -> acción ) -> Tu ciclo 'for'. Ejecuta el bloque de código indicado para cada elemento. Cierra el proceso y no devuelve nada.
-     */
-
 public class Ejercicio2 {
 
     /**

@@ -1,42 +1,5 @@
 package dosw.semana_3.taller.patrones;
 
-/**
- * -------------------------------------------------------------------
- * PARTE III — IDENTIFICANDO PATRONES DE DISEÑO
- * #11 El Único Administrador
- * -------------------------------------------------------------------
- *
- * (1) SITUACIÓN:
- * La aplicación necesita gestionar la configuración global del sistema con 
- * un único objeto compartido por toda la aplicación. Múltiples instancias 
- * crearían inconsistencias.
- *
- * (2) CATEGORÍA:
- * Patrón Creacional (Creational Pattern).
- *
- * (3) PATRÓN SELECCIONADO:
- * Singleton.
- *
- * (4) ¿POR QUÉ?:
- * El propósito fundamental del patrón Singleton es garantizar que una clase 
- * tenga una, y solo una, instancia en todo el ciclo de vida de la aplicación, 
- * y proporcionar un punto de acceso global a ella. Esto encaja perfectamente 
- * con la necesidad de un "único objeto compartido" para configuraciones globales.
- *
- * (5) ¿APLICA MÁS DE UN PATRÓN? (Alternativa Moderna):
- * Sí. En el desarrollo moderno (con frameworks como Spring o Jakarta EE), 
- * rara vez se escribe un Singleton clásico a mano. En su lugar, se utiliza:
- * 
- * - **Inyección de Dependencias (DI)** configurada con alcance "Singleton" 
- *   (Singleton Scope).
- * 
- * ¿Por qué es mejor usar Inyección de Dependencias en lugar del Singleton clásico?
- * El Singleton clásico (implementado con `static`) introduce un acoplamiento 
- * global muy fuerte en el código, lo que dificulta enormemente las pruebas 
- * unitarias (mocking) y viola principios SOLID (como DIP). Al usar DI, delegamos 
- * la responsabilidad de crear y mantener esa única instancia al contenedor 
- * (framework), manteniendo nuestras clases limpias y fáciles de testear.
- */
 public class Ejercicio11 {
 
     // --- IMPLEMENTACIÓN DEL PATRÓN SINGLETON (Clásico Thread-Safe) ---

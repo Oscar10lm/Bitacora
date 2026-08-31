@@ -5,19 +5,6 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 
-/**PATRÓN: BÚSQUEDA DEL VALOR MÁXIMO EN OBJETOS (MAX)
- * Uso:
- * "Dada una lista de objetos complejos, buscar y extraer el objeto
- * completo que posea el valor más alto en un atributo numérico específico
- * (en este caso, la cantidad de medallas)".
- *
- * ESTRUCTURA CLAVE:
- * 1. .stream() -> Abre la lista de objetos.
- * 2. .max(Comparator.comparingInt( Entrenador::getMedallas )) -> Busca el máximo
- *    evaluando el atributo entero. Devuelve un 'Optional' (caja de seguridad). Cierra el proceso.
- * 3. .get() -> Extrae el objeto ganador de la caja para acceder a sus datos.
- */
-
 public class Ejercicio15 {
 
     /**

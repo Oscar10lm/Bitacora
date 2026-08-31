@@ -1,16 +1,5 @@
 package dosw.semana_3.extra.patrones.comportamiento.template_method;
 
-/**
- * ============================================================================
- * EJERCICIO PRÁCTICO T3: PRUEBAS AUTOMATIZADAS (Template Method)
- * ============================================================================
- *
- * Ejecutar una prueba automatizada (Testing) sigue el mismo esqueleto:
- * 1. Preparar el entorno (Setup)
- * 2. Ejecutar prueba (Run/Assert - El paso que varía fuertemente)
- * 3. Verificar resultado (Comprobación de métricas base)
- * 4. Limpiar entorno (Teardown)
- */
 public class AutomatedTestTemplateSystem {
 
     // ==========================================

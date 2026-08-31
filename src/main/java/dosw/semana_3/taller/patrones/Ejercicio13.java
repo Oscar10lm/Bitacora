@@ -1,40 +1,5 @@
 package dosw.semana_3.taller.patrones;
 
-/**
- * -------------------------------------------------------------------
- * PARTE III — IDENTIFICANDO PATRONES DE DISEÑO
- * #13 Generación de Reportes
- * -------------------------------------------------------------------
- *
- * (1) SITUACIÓN:
- * El sistema debe generar un reporte en PDF, Excel o CSV según una 
- * configuración dada. El cliente que pide el reporte no quiere lidiar 
- * con los detalles de cómo se construye (instancia) cada uno de ellos.
- *
- * (2) CATEGORÍA:
- * Patrón Creacional (Creational Pattern).
- *
- * (3) PATRÓN SELECCIONADO:
- * Factory Method (o Simple Factory).
- *
- * (4) ¿POR QUÉ?:
- * El requerimiento central habla sobre ocultar los detalles de **construcción** 
- * (instanciación). El patrón Factory delega la responsabilidad de utilizar el 
- * operador `new` a una clase especial (la Fábrica). El cliente simplemente 
- * le pasa a la fábrica un parámetro (ej. "PDF") y la fábrica le devuelve un 
- * objeto genérico (una interfaz `ReportGenerator`) listo para usar.
- *
- * (5) ¿APLICA MÁS DE UN PATRÓN? (Comparación):
- * - Podría confundirse con **Abstract Factory**, pero Abstract Factory se 
- *   usa para crear *familias* enteras de objetos relacionados (ej. crear 
- *   Botón Windows, Scroll Windows, Panel Windows vs Botón Mac, etc.). Aquí 
- *   solo creamos un único producto (el reporte), por lo que Factory Method 
- *   o Simple Factory es suficiente y más directo.
- * - Podría pensarse en **Strategy**, pero Strategy se enfoca en intercambiar
- *   comportamientos que ya fueron construidos e inyectados. Aquí el dolor está 
- *   en el momento mismo de **crear** el objeto según una configuración, terreno 
- *   exclusivo de los patrones creacionales.
- */
 public class Ejercicio13 {
 
     // --- IMPLEMENTACIÓN DEL PATRÓN FACTORY ---

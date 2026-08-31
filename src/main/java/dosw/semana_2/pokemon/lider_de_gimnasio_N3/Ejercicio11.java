@@ -3,19 +3,6 @@
 import java.util.List;
 import java.util.OptionalDouble;
 
-/**PATRÓN: CÁLCULO DE PROMEDIOS CON STREAMS PRIMITIVOS
- * Uso:
- * "Dada una lista de objetos, extraer un atributo numérico específico,
- * transformar el flujo en un 'Stream Primitivo' (como DoubleStream)
- * y calcular estadísticamente el promedio de todos los valores".
- *
- * ESTRUCTURA CLAVE:
- * 1. .stream() -> Abre la lista de objetos.
- * 2. .mapToDouble( Pokemon::getPoderCombate ) -> Extrae el número y convierte el flujo general en uno especializado para matemáticas con decimales.
- * 3. .average() -> Calcula el promedio de todos los valores que pasaron. Devuelve un 'OptionalDouble' (una caja que previene errores si la lista estaba vacía).
- * 4. .getAsDouble() -> Extrae el número final de la caja.
- */
-
 public class Ejercicio11 {
 
     /**

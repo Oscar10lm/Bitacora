@@ -1,25 +1,5 @@
 package dosw.semana_3.extra.patrones.creacionales.abstract_factory;
 
-/**
- * ============================================================================
- * EJERCICIO PRÁCTICO: INTERFAZ MULTIPLATAFORMA (Abstract Factory)
- * ============================================================================
- *
- * Una aplicación debe verse "nativa" en distintos sistemas operativos. 
- * Cada sistema operativo ofrece una familia de componentes visuales compatibles 
- * entre sí:
- * - Botón
- * - Checkbox
- * - Barra de desplazamiento (Scrollbar)
- *
- * SO soportados inicialmente:
- * - Windows
- * - MacOS
- *
- * La aplicación no debe conocer las implementaciones concretas de estos 
- * componentes — solo debe poder renderizar el botón, checkbox y scrollbar, 
- * sin importar el sistema operativo subyacente.
- */
 public class CrossPlatformUISystem {
 
     // ==========================================

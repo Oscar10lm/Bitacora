@@ -3,39 +3,6 @@ package dosw.semana_3.taller.patrones;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * -------------------------------------------------------------------
- * PARTE III — IDENTIFICANDO PATRONES DE DISEÑO
- * #14 Sistema de Eventos — Cambio de Estado de Pedido
- * -------------------------------------------------------------------
- *
- * (1) SITUACIÓN:
- * Cuando un pedido cambia de estado, hay que avisar a 4 sistemas distintos. 
- * Si mañana queremos que facturación también se entere, no queremos abrir 
- * ni tocar el código de la clase `Pedido`.
- *
- * (2) CATEGORÍA:
- * Patrón de Comportamiento (Behavioral Pattern).
- *
- * (3) PATRÓN SELECCIONADO:
- * Observer (Observador) / Publisher-Subscriber.
- *
- * (4) ¿POR QUÉ?:
- * El patrón Observer define una dependencia de uno a muchos entre objetos. 
- * El "Sujeto" (Pedido) mantiene una lista de "Observadores" (Inventario, 
- * Correo, etc.) que cumplen una interfaz común. Cuando el estado del Pedido 
- * cambia, este simplemente recorre la lista avisándoles a todos.
- * Agregar un nuevo observador (como Facturación) solo implica crear la 
- * nueva clase y añadirla a la lista del Pedido; la clase Pedido en sí nunca 
- * se modifica. Esto cumple perfectamente con el principio OCP.
- *
- * (5) ¿APLICA MÁS DE UN PATRÓN? (Comparación):
- * - Se podría pensar en el patrón **Mediator** (Mediador), que también 
- *   desacopla objetos. Sin embargo, Mediator se usa cuando hay una red 
- *   caótica de objetos que se comunican *entre sí* (todos contra todos). 
- *   Aquí tenemos un caso puro de "Uno hacia Muchos" de forma reactiva, lo 
- *   cual es el dominio absoluto del patrón Observer.
- */
 public class Ejercicio14 {
 
     // --- IMPLEMENTACIÓN DEL PATRÓN OBSERVER ---

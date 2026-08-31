@@ -2,17 +2,6 @@
 
 import java.util.List;
 
-/**PATRÓN: COMPROBACIÓN TOTAL (¿TODOS CUMPLEN?)
- * Uso:
- * "Dada una lista, confirmar obligatoriamente que TODOS y cada uno de los
- * elementos cumplen con una regla. Si uno solo falla, devuelve false".
- *
- * ESTRUCTURA CLAVE:
- * 1. .stream() -> Abre la lista.
- * 2. .allMatch( e -> condición ) -> Revisa a todos. Si todos dan true, devuelve true.
- *    Cierra el proceso.
- */
-
 public class Ejercicio14 {
 
     /**

@@ -3,35 +3,6 @@ package dosw.semana_3.extra.patrones.estructurales.composite;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * ============================================================================
- * PATRÓN DE DISEÑO: COMPOSITE (ESTRUCTURAL)
- * ============================================================================
- *
- * DEFINICIÓN:
- * Es un patrón de diseño estructural que te permite componer objetos en 
- * estructuras de árbol y trabajar con esas estructuras como si fueran objetos 
- * individuales.
- *
- * VENTAJAS CLAVE:
- * - Proporciona dos tipos de elementos básicos: Hojas (simples) y Contenedores 
- *   (complejos).
- * - Permite construir una estructura de objetos recursivos anidados parecida 
- *   a un árbol.
- * - Todos los elementos comparten una interfaz común, así que el cliente no 
- *   tiene que preocuparse de si está lidiando con un elemento simple o con 
- *   un grupo complejo de elementos (Polimorfismo).
- *
- * ----------------------------------------------------------------------------
- * EJERCICIO PRÁCTICO: BODEGA DE PRODUCTOS Y CAJAS
- * ----------------------------------------------------------------------------
- * Una bodega maneja productos individuales y cajas que pueden contener:
- * - Productos
- * - Otras cajas (cajas dentro de cajas)
- * 
- * El sistema debe poder calcular el precio total de cualquier elemento, sin 
- * importar si es un producto simple o una caja compuesta, utilizando recursión.
- */
 public class WarehouseCompositeSystem {
 
     // ==========================================

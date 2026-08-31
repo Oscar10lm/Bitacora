@@ -3,19 +3,6 @@
 import java.util.List;
 import java.util.stream.Collectors;
 
-    /**PATRÓN: DEPURACIÓN / ESPIAR EL FLUJO SIN ALTERARLO
-     * Uso:
-     * "Dada una lista, transfórmala o fíltrala, pero imprime o ejecuta algo
-     * en medio del proceso para ver qué está pasando paso a paso".
-     *
-     * ESTRUCTURA CLAVE:
-     * 1. .stream() -> Abre la lista.
-     * 2. .map() / .filter() -> Tus operaciones normales.
-     * 3. .peek( e -> acción ) -> Espía el elemento en ese punto e imprime,
-     *    pero lo deja seguir su camino sin modificarlo.
-     * 4. .collect(...) -> Empaca el resultado.
-     */
-
 public class Ejercicio6 {
 
     /**

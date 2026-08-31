@@ -3,18 +3,6 @@ package dosw.semana_3.extra.patrones.comportamiento.iterator;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * ============================================================================
- * EJERCICIO PRÁCTICO: CATÁLOGO DE BIBLIOTECA (Iterator)
- * ============================================================================
- *
- * Una biblioteca tiene un catálogo de libros disponibles:
- * - Libro A, Libro B, Libro C, Libro D, Libro E
- *
- * El sistema debe poder recorrer el catálogo libro por libro sin exponer la 
- * estructura interna, permitiendo además que dos bibliotecarios recorran el 
- * catálogo al mismo tiempo de forma independiente (cada uno en su propia posición).
- */
 public class LibraryCatalogIteratorSystem {
 
     // ==========================================

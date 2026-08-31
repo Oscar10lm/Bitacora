@@ -1,35 +1,5 @@
 package dosw.semana_3.extra.patrones.creacionales.builder;
 
-/**
- * ============================================================================
- * PATRÓN DE DISEÑO: BUILDER (CREACIONAL)
- * ============================================================================
- *
- * DEFINICIÓN:
- * Es un patrón de diseño creacional que nos permite construir objetos 
- * complejos paso a paso. El patrón nos permite producir distintos tipos y 
- * representaciones de un objeto empleando el mismo código de construcción.
- *
- * VENTAJAS CLAVE:
- * - Puedes construir objetos paso a paso, aplazar pasos de la construcción o 
- *   ejecutar pasos de forma recursiva.
- * - Puedes reutilizar el mismo código de construcción al construir varias 
- *   representaciones de productos.
- * - Utiliza SINGLE RESPONSIBILITY (SRP) al aislar el código de construcción 
- *   complejo de la lógica de negocio del producto.
- * - No es necesario crear constructores tan grandes o especializados (adiós al 
- *   Telescoping Constructor) dependiendo de la combinación de los datos de entrada.
- * - EL BUILDER NO ELIMINA LOS PARÁMETROS, LOS CONVIERTE EN PASOS EXPLÍCITOS Y CON NOMBRE.
- *
- * ----------------------------------------------------------------------------
- * EJERCICIO PRÁCTICO: FÁBRICA DE JUGUETES
- * ----------------------------------------------------------------------------
- * Una fábrica de juguetes produce muñecos con distintas configuraciones.
- * El proceso de ensamblaje es el mismo, pero el resultado final varía según 
- * el tipo de muñeco solicitado.
- * Ejemplos: Muñeco de acción, Muñeca clásica.
- * Cada muñeco está conformado por: cabeza, cuerpo, brazos, piernas y accesorios.
- */
 public class ToyFactorySystem {
 
     // ==========================================

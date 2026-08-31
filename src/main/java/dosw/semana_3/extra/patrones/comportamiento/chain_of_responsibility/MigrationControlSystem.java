@@ -1,34 +1,5 @@
 package dosw.semana_3.extra.patrones.comportamiento.chain_of_responsibility;
 
-/**
- * ============================================================================
- * PATRÓN DE DISEÑO: CHAIN OF RESPONSIBILITY (COMPORTAMIENTO)
- * ============================================================================
- *
- * DEFINICIÓN:
- * Es un patrón de diseño de comportamiento que te permite pasar solicitudes a 
- * lo largo de una cadena de manejadores. Al recibir una solicitud, cada 
- * manejador decide si la procesa o si la pasa al siguiente manejador.
- *
- * VENTAJAS CLAVE:
- * - Desacopla al emisor de una petición de sus receptores.
- * - Puedes controlar y cambiar dinámicamente el orden de la cadena.
- * - Sigue el principio SRP al separar cada paso/validación en su propia clase.
- * - Sigue el principio OCP al permitir añadir nuevos eslabones a la cadena 
- *   sin romper el código cliente.
- *
- * ----------------------------------------------------------------------------
- * EJERCICIO PRÁCTICO: CONTROLES MIGRATORIOS (ESTADOS UNIDOS)
- * ----------------------------------------------------------------------------
- * Una persona intenta ingresar al país. Debe pasar por una cadena de controles:
- * 1. Revisión de pasaporte y visa
- * 2. Control de antecedentes
- * 3. Revisión de motivos del viaje
- * 4. Aprobación final por migración
- * 
- * Cada control aprueba y pasa al siguiente, o rechaza deteniendo el proceso.
- * El pasajero no sabe cuántos controles hay internamente.
- */
 public class MigrationControlSystem {
 
     // ==========================================

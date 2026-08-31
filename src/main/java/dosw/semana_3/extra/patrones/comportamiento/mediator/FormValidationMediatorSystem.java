@@ -1,16 +1,5 @@
 package dosw.semana_3.extra.patrones.comportamiento.mediator;
 
-/**
- * ============================================================================
- * EJERCICIO PRÁCTICO M2: FORMULARIO CON VALIDACIÓN CRUZADA (Mediator)
- * ============================================================================
- *
- * Un formulario tiene varios campos (Checkbox "Suscribirse", TextBox "Email", 
- * Button "Enviar") donde la habilitación de unos depende del estado de otros.
- * 
- * En vez de que cada campo conozca directamente a los demás (Código espagueti 
- * de UI), un mediador central coordina esas interacciones.
- */
 public class FormValidationMediatorSystem {
 
     // ==========================================

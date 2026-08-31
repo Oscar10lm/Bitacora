@@ -2,28 +2,6 @@ package dosw.semana_3.extra.patrones.comportamiento.memento;
 
 import java.util.Stack;
 
-/**
- * ============================================================================
- * PATRÓN DE DISEÑO: MEMENTO (COMPORTAMIENTO)
- * ============================================================================
- *
- * DEFINICIÓN:
- * Permite capturar y guardar el estado interno de un objeto en un momento 
- * dado, para poder restaurarlo después (ej. deshacer), sin exponer ni romper 
- * el encapsulamiento de esa clase.
- *
- * VENTAJAS CLAVE:
- * - Puedes producir capturas de estado del objeto sin violar su encapsulación.
- * - Simplifica el código de la clase originadora permitiendo que la clase 
- *   cuidadora (Caretaker) mantenga el historial.
- *
- * ----------------------------------------------------------------------------
- * EJERCICIO PRÁCTICO Me1: EDITOR DE TEXTO (Deshacer)
- * ----------------------------------------------------------------------------
- * Un editor de texto permite deshacer cambios, guardando snapshots del estado 
- * del documento antes de cada edición, sin que el historial de cambios necesite 
- * conocer la estructura interna del documento.
- */
 public class TextEditorMementoSystem {
 
     // ==========================================

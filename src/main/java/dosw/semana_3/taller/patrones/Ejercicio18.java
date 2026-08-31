@@ -1,41 +1,5 @@
 package dosw.semana_3.taller.patrones;
 
-/**
- * -------------------------------------------------------------------
- * PARTE III — IDENTIFICANDO PATRONES DE DISEÑO
- * #18 Sistema de Seguridad — Validaciones en Cadena
- * -------------------------------------------------------------------
- *
- * (1) SITUACIÓN:
- * Una solicitud pasa por múltiples validaciones (autenticación, roles, 
- * geografía, etc.). La cantidad y tipo de validaciones puede variar según 
- * el entorno (ej. agregar MFA). Cada validación evalúa la solicitud y decide 
- * si la rechaza inmediatamente o la pasa al siguiente filtro.
- *
- * (2) CATEGORÍA:
- * Patrón de Comportamiento (Behavioral Pattern).
- *
- * (3) PATRÓN SELECCIONADO:
- * Chain of Responsibility (Cadena de Responsabilidad).
- *
- * (4) ¿POR QUÉ?:
- * El patrón Cadena de Responsabilidad permite pasar solicitudes a lo largo 
- * de una cadena de manejadores (handlers). Al recibir una solicitud, cada 
- * manejador decide si la procesa (ej. rechazando el acceso) o si la pasa al 
- * siguiente eslabón de la cadena. Es perfecto aquí porque:
- * 1. Evita anidar un montón de bloques `if` en el código cliente.
- * 2. Permite ensamblar o modificar dinámicamente el orden o cantidad de 
- *    los filtros (ej. añadir MFA en producción pero no en desarrollo) en 
- *    tiempo de ejecución.
- *
- * (5) ¿APLICA MÁS DE UN PATRÓN? (Comparación):
- * - Se podría confundir con **Decorator** (Decorador), que también envuelve 
- *   objetos de forma recursiva. Sin embargo, la diferencia conceptual clave es:
- *   * Decorator busca *añadir comportamiento* a una petición sin detener la ejecución.
- *   * Chain of Responsibility está diseñado específicamente para tener la 
- *     autoridad de *detener el flujo* (corto-circuito). Si el filtro de 
- *     autenticación falla, la cadena se rompe y jamás llega a evaluar el rol.
- */
 public class Ejercicio18 {
 
     // --- IMPLEMENTACIÓN DEL PATRÓN CHAIN OF RESPONSIBILITY ---

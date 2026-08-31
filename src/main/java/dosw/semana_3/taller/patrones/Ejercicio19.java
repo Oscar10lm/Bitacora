@@ -1,49 +1,5 @@
 package dosw.semana_3.taller.patrones;
 
-/**
- * -------------------------------------------------------------------
- * PARTE III — IDENTIFICANDO PATRONES DE DISEÑO
- * #19 CASO DESAFÍO: DOSW Streaming
- * -------------------------------------------------------------------
- *
- * (1) SITUACIÓN:
- * Una plataforma de streaming compleja que involucra recomendaciones, tipos 
- * de usuario, algoritmos de búsqueda, notificaciones multicanal e 
- * integraciones de terceros.
- *
- * (2) ANÁLISIS DE PRINCIPIOS SOLID A CONSIDERAR:
- * - SRP (Responsabilidad Única): 
- *   El motor de recomendaciones, el buscador, el reproductor y el facturador 
- *   deben ser módulos completamente separados. Ninguna "Clase Dios" debe 
- *   orquestar todo esto.
- * - OCP (Abierto/Cerrado): 
- *   El sistema debe estar preparado para que mañana se agregue el algoritmo 
- *   de búsqueda "Por Tendencias en Redes" sin tener que modificar la lógica 
- *   del buscador principal.
- * - LSP e ISP (Sustitución de Liskov y Segregación de Interfaces): 
- *   Vital para los Tipos de Usuarios. Un usuario gratuito no debe verse 
- *   obligado a implementar métodos de `descargarVideo()` (ISP), pero todos 
- *   deben poder pasarse al reproductor de video sin que este falle (LSP).
- * - DIP (Inversión de Dependencias): 
- *   El núcleo de la aplicación de streaming jamás debe depender directamente 
- *   de "PayU" o "Stripe". Debe depender de una interfaz `PaymentGateway`.
- *
- * (3) ANÁLISIS DE PATRONES DE DISEÑO A CONSIDERAR:
- * 1. Algoritmos de Búsqueda -> **Strategy**: 
- *    Encapsular las búsquedas (popularidad, relevancia) en distintas clases 
- *    (Estrategias) y permitir que el usuario las seleccione en tiempo de 
- *    ejecución.
- * 2. Notificaciones Multicanal -> **Observer**: 
- *    Cuando sale un nuevo episodio, el sistema notifica. Los canales (Push, 
- *    Email) son "Observadores" suscritos a ese evento. 
- * 3. Integraciones Externas -> **Adapter / Facade**: 
- *    Utilizar Adaptadores para conectar las APIs raras de subtítulos externos 
- *    con nuestra interfaz local, y Fachadas para simplificar procesos complejos 
- *    de pasarelas de pago.
- * 4. Tipos de Usuario Complejos -> **Factory Method**: 
- *    Para crear el perfil y las configuraciones de un nuevo usuario en el 
- *    registro según el plan que haya pagado.
- */
 public class Ejercicio19 {
 
     // --- ESQUELETO ARQUITECTÓNICO DE ALTO NIVEL ---

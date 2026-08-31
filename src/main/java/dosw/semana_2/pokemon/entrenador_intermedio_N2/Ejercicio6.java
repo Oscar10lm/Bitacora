@@ -2,17 +2,6 @@
 
 import java.util.List;
 
-/**PATRÓN: ELIMINACIÓN RÁPIDA DE DUPLICADOS (DISTINCT)
- * Uso:
- * "Dada una lista con elementos repetidos, limpiar la colección filtrando
- * automáticamente cualquier elemento que ya exista, para que quede solo una copia".
- *
- * ESTRUCTURA CLAVE:
- * 1. .stream() -> Abre la lista.
- * 2. .distinct() -> Identifica y bloquea los elementos duplicados (usa el método equals() por debajo).
- * 3. .toList() -> Empaca los elementos únicos resultantes en una nueva lista.
- */
-
 public class Ejercicio6 {
 
     /**

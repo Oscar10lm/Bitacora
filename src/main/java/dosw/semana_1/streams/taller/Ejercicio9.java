@@ -3,17 +3,6 @@
 import java.util.List;
 import java.util.stream.Collectors;
 
-/**PATRÓN: RECORTAR / LIMITAR LA LISTA (TOP N)
- * Uso:
- * "Dada una lista, quédate únicamente con los primeros N elementos
- * y descarta absolutamente todo lo demás".
- *
- * ESTRUCTURA CLAVE:
- * 1. .stream() -> Abre la lista.
- * 2. .limit(N) -> Corta el flujo, solo deja pasar los primeros N elementos.
- * 3. .collect(Collectors.toList()) -> Empaca ese top en una nueva lista.
- */
-
 public class Ejercicio9 {
 
     /**

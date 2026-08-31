@@ -4,18 +4,6 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 
-/**PATRÓN: BÚSQUEDA DEL VALOR MÁXIMO EN OBJETOS COMPLEJOS
- * Uso:
- * "Dada una lista de objetos estructurados, buscar y extraer el objeto
- * completo que posea el valor más alto en un atributo numérico específico".
- *
- * ESTRUCTURA CLAVE:
- * 1. .stream() -> Abre la lista de objetos.
- * 2. .max(Comparator.comparingDouble( Pokemon::getPoderCombate )) -> Busca el máximo
- *    evaluando el atributo decimal. Devuelve un 'Optional' (caja de seguridad). Cierra el proceso.
- * 3. .get() -> Extrae el objeto ganador de la caja para poder usar sus datos.
- */
-
 public class Ejercicio12 {
 
     /**

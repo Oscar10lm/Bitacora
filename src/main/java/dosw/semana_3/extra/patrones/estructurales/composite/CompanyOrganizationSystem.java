@@ -3,23 +3,6 @@ package dosw.semana_3.extra.patrones.estructurales.composite;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * ============================================================================
- * EJERCICIO PRÁCTICO: ESTRUCTURA ORGANIZACIONAL (Composite)
- * ============================================================================
- *
- * Una empresa modela su organigrama con empleados individuales y equipos que 
- * pueden contener:
- * - Empleados
- * - Otros equipos (equipos grandes divididos en sub-equipos)
- * 
- * El sistema debe poder calcular el costo total en salarios de cualquier 
- * elemento, sin importar si es un empleado individual o un departamento 
- * completo con sub-equipos anidados.
- * 
- * Para obtener el costo total de un equipo, es necesario recorrer recursivamente 
- * todos sus miembros (empleados y sub-equipos) y sumar sus salarios.
- */
 public class CompanyOrganizationSystem {
 
     // ==========================================

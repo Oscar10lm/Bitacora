@@ -1,17 +1,5 @@
 package dosw.semana_3.extra.patrones.creacionales.singleton;
 
-/**
- * ============================================================================
- * EJERCICIO PRÁCTICO: CONFIGURACIÓN GLOBAL DE LA APLICACIÓN (Singleton)
- * ============================================================================
- *
- * Un sistema carga su configuración (idioma, tema, credenciales de conexión) 
- * una sola vez al iniciar, desde un archivo. 
- * 
- * Distintos módulos del programa necesitan leer esa misma configuración, 
- * pero no debe existir más de una instancia cargando o representando esa 
- * configuración — todos deben acceder a los mismos valores.
- */
 public class GlobalConfigurationSystem {
 
     // ==========================================

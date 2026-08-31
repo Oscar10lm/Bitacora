@@ -1,16 +1,5 @@
 package dosw.semana_3.extra.patrones.comportamiento.template_method;
 
-/**
- * ============================================================================
- * EJERCICIO PRÁCTICO T2: PROCESAMIENTO DE REPORTES (Template Method)
- * ============================================================================
- *
- * Generar un reporte (PDF o Excel) sigue el mismo esqueleto:
- * 1. Obtener datos (Base de datos)
- * 2. Aplicar formato (El paso que varía)
- * 3. Guardar archivo (Disco)
- * 4. Notificar al usuario (Email)
- */
 public class ReportGeneratorTemplateSystem {
 
     // ==========================================

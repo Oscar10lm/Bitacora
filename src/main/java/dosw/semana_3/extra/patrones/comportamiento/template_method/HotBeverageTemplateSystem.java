@@ -1,30 +1,5 @@
 package dosw.semana_3.extra.patrones.comportamiento.template_method;
 
-/**
- * ============================================================================
- * PATRÓN DE DISEÑO: TEMPLATE METHOD (COMPORTAMIENTO)
- * ============================================================================
- *
- * DEFINICIÓN:
- * Define el esqueleto de un algoritmo en una operación, delegando algunos pasos 
- * a las subclases. Template Method permite a las subclases redefinir ciertos 
- * pasos de un algoritmo sin cambiar la estructura o el esqueleto del mismo.
- *
- * VENTAJAS CLAVE:
- * - Evita la duplicación de código en procesos similares.
- * - Inversión de Control ("Principio de Hollywood"): "No nos llames, nosotros 
- *   te llamaremos". La clase base llama a los métodos de las subclases y no al revés.
- * - Asegura que el proceso principal siempre siga el mismo orden de ejecución.
- *
- * ----------------------------------------------------------------------------
- * EJERCICIO PRÁCTICO T1: PREPARACIÓN DE BEBIDAS CALIENTES
- * ----------------------------------------------------------------------------
- * Preparar café y té sigue el mismo esqueleto general (hervir agua, preparar 
- * el ingrediente, verter en taza, agregar condimentos).
- * 
- * Los pasos "preparar ingrediente" y "agregar condimentos" varían, pero el 
- * orden general es inmutable.
- */
 public class HotBeverageTemplateSystem {
 
     // ==========================================

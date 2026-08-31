@@ -1,19 +1,5 @@
 package dosw.semana_3.extra.patrones.creacionales.factory_method;
 
-/**
- * ============================================================================
- * EJERCICIO PRÁCTICO: GENERADOR DE DOCUMENTOS (Factory Method)
- * ============================================================================
- *
- * Una aplicación de oficina permite exportar un reporte en distintos formatos:
- * - PDF
- * - Word
- * - Excel
- *
- * El código que genera el reporte no debe conocer las clases concretas de 
- * cada exportador — debe poder pedir "genera el documento" sin importar el 
- * formato final.
- */
 public class DocumentGeneratorSystem {
 
     // ==========================================

@@ -2,18 +2,6 @@
 
 import java.util.List;
 
-/**PATRÓN: ORDENAMIENTO BÁSICO (SORTED)
- * Uso:
- * "Dada una lista desordenada, organiza sus elementos según su orden
- * natural (alfabéticamente para textos, de menor a mayor para números)".
- *
- * ESTRUCTURA CLAVE:
- * 1. .stream() -> Abre la lista.
- * 2. .sorted() -> Ordena los elementos por defecto. Si necesitas un orden
- *    inverso o por un atributo, aquí dentro usarías un 'Comparator'.
- * 3. .toList() -> Empaca los elementos ya ordenados en una nueva lista.
- */
-
 public class Ejercicio7 {
 
     /**

@@ -1,21 +1,5 @@
 package dosw.semana_3.extra.patrones.estructurales.bridge;
 
-/**
- * ============================================================================
- * EJERCICIO PRÁCTICO: DISPOSITIVOS Y CONTROLES REMOTOS (Bridge)
- * ============================================================================
- *
- * Una empresa de electrónica vende distintos tipos de dispositivos (Televisor, 
- * Radio) que pueden ser controlados por distintos tipos de controles remotos 
- * (Básico, Avanzado). 
- * 
- * Si se usa herencia pura, la combinación crece con cada nuevo dispositivo o 
- * cada nuevo tipo de control (TelevisorControlBasico, RadioControlAvanzado, etc.).
- * 
- * Se aplica Bridge separando la jerarquía de Control Remoto (abstracción) de 
- * la jerarquía de Dispositivo (implementación). Un control remoto puede operar 
- * sobre cualquier dispositivo sin necesitar una subclase por cada combinación.
- */
 public class RemoteDeviceBridgeSystem {
 
     // ==========================================

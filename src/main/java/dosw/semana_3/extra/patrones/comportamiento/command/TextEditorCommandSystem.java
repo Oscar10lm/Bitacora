@@ -2,24 +2,6 @@ package dosw.semana_3.extra.patrones.comportamiento.command;
 
 import java.util.Stack;
 
-/**
- * ============================================================================
- * EJERCICIO PRÁCTICO: EDITOR DE TEXTO (Command)
- * ============================================================================
- *
- * Un editor de texto permite ejecutar acciones sobre un documento mediante 
- * una barra de herramientas:
- * - Escribir texto
- * - Eliminar texto
- * - Cambiar a mayúsculas
- *
- * Cada acción se encapsula como un comando, de modo que el editor pueda 
- * ejecutar cualquier botón de la barra de herramientas sin conocer los 
- * detalles internos de cómo se modifica el documento. 
- * 
- * El editor debe mantener un historial de comandos ejecutados, para poder 
- * deshacer (Undo) la última acción en cualquier momento.
- */
 public class TextEditorCommandSystem {
 
     // ==========================================

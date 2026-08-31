@@ -2,20 +2,6 @@
 
 import java.util.List;
 
-/**PATRÓN: DEPURACIÓN Y COMPROBACIÓN (PEEK + CORTOCIRCUITO)
- * Uso:
- * "Dada una lista, procesa los elementos imprimiéndolos para ver qué pasa
- * (debug) y verifica si AL MENOS UNO cumple una condición. Útil para validar
- * lotes de datos enteros".
- *
- * ESTRUCTURA CLAVE:
- * 1. .stream() -> Abre la lista.
- * 2. .peek(System.out::println) -> Imprime el elemento tal cual va pasando por la cinta.
- * 3. .anyMatch( t -> condición ) -> Revisa la regla. OJO: Tiene "cortocircuito", lo que
- *    significa que apenas encuentre un 'true' (ej. la primera transacción denegada),
- *    detiene el Stream completo y no procesa los elementos restantes.
- */
-
 public class Ejercicio5 {
 
     // Se usa un Record para representar la clase Transaction descrita en la imagen

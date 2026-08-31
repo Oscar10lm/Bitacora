@@ -1,21 +1,5 @@
 package dosw.semana_3.extra.patrones.comportamiento.state;
 
-/**
- * ============================================================================
- * EJERCICIO PRÁCTICO S2: PEDIDO DE E-COMMERCE (State)
- * ============================================================================
- *
- * Un pedido cambia de comportamiento según su estado:
- * - Pendiente
- * - Pagado
- * - Enviado
- * - Entregado
- *
- * Reglas de negocio (dependientes del estado):
- * - Solo se puede cancelar si está "Pendiente" o "Pagado".
- * - Solo se puede confirmar recepción si está "Enviado".
- * - Intentar pagar algo ya pagado o cancelar algo enviado debe devolver un error.
- */
 public class EcommerceOrderStateSystem {
 
     // ==========================================

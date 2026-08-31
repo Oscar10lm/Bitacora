@@ -4,17 +4,6 @@ import java.util.List;
 import java.util.Comparator;
 import java.util.Optional;
 
-/**PATRÓN: BÚSQUEDA DEL VALOR MÍNIMO
- * Uso:
- * "Dada una lista, encontrar el elemento más pequeño (el menor número,
- * la fecha más antigua, etc.)".
- *
- * ESTRUCTURA CLAVE:
- * 1. .stream() -> Abre la lista.
- * 2. .min(Comparator.naturalOrder()) -> Encuentra el mínimo devolviendo un 'Optional'
- *    (una caja que puede contener el valor o estar vacía si la lista original lo estaba). Cierra el proceso.
- */
-
 public class Ejercicio11 {
 
     /**

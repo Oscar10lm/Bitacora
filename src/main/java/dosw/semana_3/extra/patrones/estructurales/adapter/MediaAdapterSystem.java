@@ -1,21 +1,5 @@
 package dosw.semana_3.extra.patrones.estructurales.adapter;
 
-/**
- * ============================================================================
- * EJERCICIO PRÁCTICO: REPRODUCTOR DE MEDIOS MULTIFORMATO (Adapter)
- * ============================================================================
- *
- * Una aplicación de reproducción de audio tiene un reproductor estándar 
- * que espera un método: reproducir(archivo). 
- * 
- * La aplicación necesita soportar dos librerías externas de terceros para 
- * formatos avanzados, con interfaces incompatibles que no se pueden modificar:
- * - VlcEngineLegacy: su método es playMedia(path, format).
- * - Mp4NativeDecoder: su método es startDecoding(filePath).
- *
- * El reproductor central de la aplicación no debe cambiar. Se debe unificar 
- * la reproducción de todos los formatos mediante el patrón Adapter.
- */
 public class MediaAdapterSystem {
 
     // ==========================================

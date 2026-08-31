@@ -1,20 +1,5 @@
 package dosw.semana_3.extra.patrones.comportamiento.strategy;
 
-/**
- * ============================================================================
- * EJERCICIO PRÁCTICO: COMPRESIÓN DE ARCHIVOS (Strategy)
- * ============================================================================
- *
- * Una aplicación de almacenamiento permite comprimir archivos antes de 
- * subirlos al servidor, pero el algoritmo de compresión puede variar:
- * - Compresión ZIP (rápida, compresión moderada)
- * - Compresión RAR (más lenta, mayor compresión)
- * - Sin compresión (subir el archivo tal cual)
- *
- * El algoritmo de compresión no debe estar acoplado al proceso de subida 
- * de archivos, permitiendo que el usuario cambie el método de compresión 
- * sin modificar el resto de la aplicación (Inversión de Control).
- */
 public class FileCompressionStrategySystem {
 
     // ==========================================

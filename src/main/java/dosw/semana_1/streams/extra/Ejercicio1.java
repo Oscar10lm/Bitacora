@@ -2,18 +2,6 @@
 
 import java.util.List;
 
-/**PATRÓN: FILTRADO MÚLTIPLE O COMPUESTO
- * Uso:
- * "Dada una lista, extraer los elementos que deban cumplir con DOS O MÁS
- * condiciones simultáneamente".
- *
- * ESTRUCTURA CLAVE:
- * Puedes aplicarlo de dos formas:
- * 1. Encadenado: .filter(condición1).filter(condición2) -> Ideal si las reglas son largas o complejas.
- * 2. Lógico (&&): .filter(condición1 && condición2) -> Ideal para reglas cortas y matemáticas.
- * 3. .toList() -> Cierra el proceso empacando en una lista (atajo moderno para collect(Collectors.toList())).
- */
-
 public class Ejercicio1 {
 
     /**

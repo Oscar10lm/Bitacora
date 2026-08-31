@@ -1,27 +1,5 @@
 package dosw.semana_3.extra.patrones.creacionales.prototype;
 
-/**
- * ============================================================================
- * PATRÓN DE DISEÑO: PROTOTYPE (CREACIONAL)
- * ============================================================================
- *
- * DEFINICIÓN:
- * Crea objetos clonando una instancia existente en vez de construirla desde cero.
- * 
- * ÚTIL CUANDO:
- * a) Crear el objeto es costoso (requiere consultar una base de datos, 
- *    hacer cálculos pesados, cargar recursos gráficos pesados, etc.).
- * b) Necesitas muchas variantes de un objeto base con pequeños cambios, sin 
- *    repetir todo el proceso de construcción.
- *
- * ----------------------------------------------------------------------------
- * EJERCICIO PRÁCTICO: EDITOR DE DOCUMENTOS CON PLANTILLAS
- * ----------------------------------------------------------------------------
- * Un editor permite crear nuevos documentos a partir de plantillas ya diseñadas.
- * Crear la plantilla desde cero es costoso (carga de estilos, imágenes, etc.).
- * El sistema permite clonar una plantilla existente para generar un documento 
- * nuevo, modificando solo el contenido sin rehacer el diseño pesado.
- */
 public class DocumentTemplateSystem {
 
     // ==========================================

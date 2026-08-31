@@ -1,28 +1,5 @@
 package dosw.semana_3.extra.patrones.comportamiento.state;
 
-/**
- * ============================================================================
- * PATRÓN DE DISEÑO: STATE (COMPORTAMIENTO)
- * ============================================================================
- *
- * DEFINICIÓN:
- * Permite que un objeto cambie su comportamiento cuando cambia su estado 
- * interno, como si cambiara de clase.
- *
- * VENTAJAS CLAVE:
- * - Evita condicionales gigantes (if/else/switch enormes) agrupando los 
- *   comportamientos asociados a un estado en particular dentro de una clase 
- *   aislada.
- * - Sigue el principio SRP y OCP: Puedes añadir nuevos estados fácilmente sin 
- *   tocar los demás ni el Contexto.
- *
- * ----------------------------------------------------------------------------
- * EJERCICIO PRÁCTICO S1: SEMÁFORO
- * ----------------------------------------------------------------------------
- * Un semáforo cambia su comportamiento según su estado (Rojo, Amarillo, Verde).
- * Cada estado determina cuánto tiempo dura y a qué estado pasa después, sin 
- * usar un gran if/else para controlar la transición en el semáforo principal.
- */
 public class TrafficLightStateSystem {
 
     // ==========================================

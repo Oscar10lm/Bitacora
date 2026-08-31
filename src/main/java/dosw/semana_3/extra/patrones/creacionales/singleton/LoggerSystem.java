@@ -3,29 +3,6 @@ package dosw.semana_3.extra.patrones.creacionales.singleton;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-/**
- * ============================================================================
- * PATRÓN DE DISEÑO: SINGLETON (CREACIONAL)
- * ============================================================================
- *
- * DEFINICIÓN:
- * Garantiza que una clase tenga una única instancia en toda la aplicación, 
- * con un punto de acceso global a ella. 
- * 
- * Se implementa típicamente con:
- * 1. Un constructor privado.
- * 2. Una variable estática que guarda la única instancia.
- * 3. Un método estático getInstancia() que crea la instancia solo la primera 
- *    vez y la reutiliza después.
- *
- * ----------------------------------------------------------------------------
- * EJERCICIO PRÁCTICO: REGISTRO DE LOGS (LOGGER)
- * ----------------------------------------------------------------------------
- * Una aplicación necesita registrar mensajes de log (errores, información) 
- * desde distintas partes del código. Todos los mensajes deben escribirse en el 
- * mismo lugar usando la misma configuración. No debe ser posible crear 
- * múltiples instancias del logger para evitar desincronización.
- */
 public class LoggerSystem {
 
     // ==========================================

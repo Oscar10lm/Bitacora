@@ -1,30 +1,5 @@
 package dosw.semana_3.extra.patrones.estructurales.bridge;
 
-/**
- * ============================================================================
- * PATRÓN DE DISEÑO: BRIDGE (ESTRUCTURAL)
- * ============================================================================
- *
- * DEFINICIÓN:
- * Es un patrón de diseño estructural que te permite dividir una clase grande, 
- * o un grupo de clases estrechamente relacionadas, en dos jerarquías separadas 
- * (abstracción e implementación) que pueden desarrollarse independientemente.
- *
- * EL PROBLEMA DE LA EXPLOSIÓN DE SUBCLASES:
- * Si tenemos la clase Forma (con hijos Círculo y Cuadrado) y queremos agregar 
- * Color, la herencia tradicional nos obliga a crear: CirculoRojo, CirculoAzul, 
- * CuadradoRojo, CuadradoAzul. Al agregar un triángulo, son 3 clases más. 
- * ¡Crece exponencialmente!
- *
- * LA SOLUCIÓN DEL PUENTE:
- * El patrón Bridge resuelve esto pasando de la herencia a la composición. 
- * Se extrae la dimensión "Color" a una jerarquía de clases separada. 
- * La clase "Forma" ahora referencia un objeto de la nueva jerarquía "Color".
- * 
- * COMPONENTES:
- * - Abstracción: Capa de control de alto nivel (Forma). Delega el trabajo real.
- * - Implementación: Interfaz común para las plataformas (Color).
- */
 public class ShapeColorBridgeSystem {
 
     // ==========================================

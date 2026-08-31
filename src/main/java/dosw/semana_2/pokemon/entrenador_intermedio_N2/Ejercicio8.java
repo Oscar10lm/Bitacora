@@ -2,18 +2,6 @@
 
 import java.util.List;
 
-/**PATRÓN: FILTRADO POR CONDICIÓN BOOLEANA Y EXTRACCIÓN
- * Uso:
- * "Dada una lista de objetos, descarta los que tengan un atributo booleano
- * en falso, y luego extrae un dato específico (como el nombre) de los que sí cumplen (true)".
- *
- * ESTRUCTURA CLAVE:
- * 1. .stream() -> Abre la lista.
- * 2. .filter( Pokemon::puedeEvolucionar ) -> Evalúa la condición. Al ser un booleano, no necesitas poner '== true'. Solo pasan los verdaderos.
- * 3. .map(Pokemon::nombre) -> Extrae el nombre de los que sobrevivieron al filtro.
- * 4. .toList() -> Empaca los nombres en una nueva lista.
- */
-
 public class Ejercicio8 {
 
     // Record para estructurar los datos de entrada de la imagen

@@ -1,20 +1,5 @@
 package dosw.semana_3.extra.patrones.comportamiento.strategy;
 
-/**
- * ============================================================================
- * EJERCICIO PRÁCTICO: CÁLCULO DE DESCUENTOS (Strategy)
- * ============================================================================
- *
- * Una tienda en línea aplica descuentos al total de la compra, pero la forma 
- * de calcular el descuento puede variar según la promoción activa:
- * - Descuento por porcentaje fijo (ej. 10% del total)
- * - Descuento por monto fijo (ej. $5000 menos, sin importar el total)
- * - Sin descuento (precio normal)
- *
- * El algoritmo de cálculo de descuento no debe estar acoplado al carrito de 
- * compras, ya que la promoción activa puede cambiar en cualquier momento 
- * (incluso durante la sesión del usuario).
- */
 public class ShoppingCartStrategySystem {
 
     // ==========================================

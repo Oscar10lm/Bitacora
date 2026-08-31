@@ -1,21 +1,5 @@
 package dosw.semana_3.extra.patrones.estructurales.bridge;
 
-/**
- * ============================================================================
- * EJERCICIO PRÁCTICO: NOTIFICACIONES (Bridge)
- * ============================================================================
- *
- * Una aplicación envía notificaciones de distinto tipo de contenido 
- * (Mensaje de Texto, Alerta de Sistema) a través de distintos canales de 
- * envío (Email, SMS). 
- * 
- * Con herencia pura, la combinación crece con cada nuevo tipo de contenido o 
- * cada nuevo canal (MensajeTextoEmail, AlertaSistemaSMS, etc.).
- * 
- * Se aplica Bridge separando la jerarquía de Notificación (abstracción: qué 
- * se envía) de la jerarquía de Canal de Envío (implementación: cómo se envía), 
- * de modo que cualquier tipo de notificación pueda enviarse por cualquier canal.
- */
 public class NotificationBridgeSystem {
 
     // ==========================================

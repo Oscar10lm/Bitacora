@@ -3,17 +3,6 @@
 import java.util.List;
 import java.util.stream.Collectors;
 
-/**PATRÓN: ELIMINACIÓN RÁPIDA DE DUPLICADOS (DISTINCT)
- * Uso:
- * "Dada una lista, filtrar de manera directa para que no pase
- * ningún elemento repetido a la nueva lista".
- *
- * ESTRUCTURA CLAVE:
- * 1. .stream() -> Abre la lista.
- * 2. .distinct() -> Bloquea automáticamente cualquier elemento que ya haya pasado.
- * 3. .collect(Collectors.toList()) -> Empaca los únicos en una List.
- */
-
 public class Ejercicio8 {
 
     /**

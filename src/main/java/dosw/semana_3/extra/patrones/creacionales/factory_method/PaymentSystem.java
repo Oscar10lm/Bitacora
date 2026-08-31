@@ -1,30 +1,5 @@
 package dosw.semana_3.extra.patrones.creacionales.factory_method;
 
-/**
- * ============================================================================
- * PATRÓN DE DISEÑO: FACTORY METHOD (CREACIONAL)
- * ============================================================================
- *
- * DEFINICIÓN:
- * Es un patrón de diseño creacional que proporciona una interfaz para crear 
- * objetos en una superclase, mientras permite a las subclases alterar el tipo 
- * de objetos que se crearán.
- *
- * VENTAJAS CLAVE:
- * - Evita un acoplamiento fuerte entre el creador (Processor) y los productos 
- *   concretos (Payments).
- * - SINGLE RESPONSIBILITY PRINCIPLE (SRP): Se extrae el código de creación del 
- *   producto hacia un lugar específico, haciendo el programa más fácil de mantener.
- * - OPEN/CLOSED PRINCIPLE (OCP): Permite incorporar nuevos tipos de productos 
- *   en el programa sin descomponer o alterar el código cliente existente.
- *
- * ----------------------------------------------------------------------------
- * EJERCICIO PRÁCTICO: PROCESADOR DE PAGOS
- * ----------------------------------------------------------------------------
- * Una plataforma de comercio electrónico procesa pagos usando distintos métodos:
- * Tarjeta de crédito, PayPal, Transferencia bancaria.
- * El sistema no se acopla a las clases concretas de cada pago.
- */
 public class PaymentSystem {
 
     // ==========================================

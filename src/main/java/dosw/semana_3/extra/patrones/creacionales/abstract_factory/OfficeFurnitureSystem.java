@@ -1,24 +1,5 @@
 package dosw.semana_3.extra.patrones.creacionales.abstract_factory;
 
-/**
- * ============================================================================
- * EJERCICIO PRÁCTICO: MOBILIARIO DE OFICINA (Abstract Factory)
- * ============================================================================
- *
- * Una empresa de decoración de interiores ofrece paquetes completos de mobiliario 
- * en distintos estilos. Cada estilo ofrece una familia de muebles compatibles entre sí:
- * - Silla
- * - Mesa
- * - Sofá
- *
- * Estilos soportados inicialmente:
- * - Moderno
- * - Victoriano
- *
- * El sistema de decoración no debe conocer las implementaciones concretas de cada 
- * mueble — solo debe poder pedir una silla, una mesa y un sofá, y confiar en que 
- * combinan entre sí según el estilo elegido por la fábrica.
- */
 public class OfficeFurnitureSystem {
 
     // ==========================================

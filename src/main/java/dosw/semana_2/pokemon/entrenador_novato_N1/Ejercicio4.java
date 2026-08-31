@@ -4,19 +4,6 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 
-/**PATRÓN: BÚSQUEDA DEL ELEMENTO MÁXIMO (EN OBJETOS)
- * Uso:
- * "Dada una lista de objetos, encontrar aquel que tenga el valor
- * más alto o grande basándose en uno de sus atributos (ej. el nivel)".
- *
- * ESTRUCTURA CLAVE:
- * 1. .stream() -> Abre la lista de objetos.
- * 2. .max(Comparator.comparingInt( Clase::metodo )) -> Busca el máximo usando
- *    un comparador enfocado en el atributo numérico que te interesa.
- *    Devuelve un 'Optional' (una caja). Cierra el proceso.
- * 3. .get() -> Extrae el objeto ganador de la caja Optional.
- */
-
 public class Ejercicio4 {
 
     // Record para estructurar los datos de entrada

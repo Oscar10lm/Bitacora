@@ -4,17 +4,6 @@ import java.util.List;
 import java.util.Comparator;
 import java.util.Optional;
 
-/**PATRÓN: BÚSQUEDA DEL VALOR MÁXIMO
- * Uso:
- * "Dada una lista, encontrar el elemento más grande (el mayor número,
- * el sueldo más alto, etc.)".
- *
- * ESTRUCTURA CLAVE:
- * 1. .stream() -> Abre la lista.
- * 2. .max(Comparator.naturalOrder()) -> Encuentra el máximo devolviendo un 'Optional'.
- *    Cierra el proceso.
- */
-
 public class Ejercicio12 {
 
     /**

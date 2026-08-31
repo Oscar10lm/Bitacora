@@ -2,20 +2,6 @@
 
 import java.util.List;
 
-/**PATRÓN: PIPELINE COMPLETO Y CONTEO DE ELEMENTOS (COUNT)
- * Uso:
- * "Dada una lista, aplica múltiples operaciones en cadena (filtrar,
- * transformar, ordenar) y al final cuenta cuántos elementos sobrevivieron".
- *
- * ESTRUCTURA CLAVE:
- * 1. .stream() -> Abre la lista.
- * 2. .filter() -> Filtra (ej. longitud > 4).
- * 3. .map() -> Transforma (ej. a mayúsculas).
- * 4. .sorted() -> Ordena (alfabéticamente por defecto).
- * 5. .count() -> Operación terminal. Cierra el stream y devuelve un 'long' con la cantidad.
- * * Extra: .peek() -> Sirve para espiar/imprimir los datos justo antes de contarlos.
- */
-
 public class Ejercicio2 {
 
     /**

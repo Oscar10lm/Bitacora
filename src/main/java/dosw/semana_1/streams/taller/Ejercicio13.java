@@ -2,17 +2,6 @@
 
 import java.util.List;
 
-/**PATRÓN: COMPROBACIÓN DE EXISTENCIA (¿HAY ALGUNO?)
- * Uso:
- * "Dada una lista, saber si AL MENOS UN elemento cumple con una condición.
- * Te responde con un booleano (true/false) inmediato".
- *
- * ESTRUCTURA CLAVE:
- * 1. .stream() -> Abre la lista.
- * 2. .anyMatch( e -> condición ) -> Devuelve true en el instante que encuentra el primero.
- *    Cierra el proceso.
- */
-
 public class Ejercicio13 {
 
     /**

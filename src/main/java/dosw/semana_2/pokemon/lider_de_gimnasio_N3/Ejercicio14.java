@@ -4,19 +4,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-/**PATRÓN: AGRUPACIÓN DE ELEMENTOS (GROUPINGBY)
- * Uso:
- * "Dada una lista de objetos, organizarlos en subgrupos o categorías
- * basándose en un atributo en común (en este caso, la región),
- * creando un Diccionario o Mapa".
- *
- * ESTRUCTURA CLAVE:
- * 1. .stream() -> Abre la lista de objetos.
- * 2. .collect(Collectors.groupingBy( llave, valor_opcional )) -> Cierra el proceso agrupando.
- *    - 'llave' (Pokemon::getRegion): Es el atributo por el cual vas a agrupar.
- *    - 'valor' (Collectors.mapping(...)): Se anida para extraer solo el nombre y evitar guardar el objeto completo.
- */
-
 public class Ejercicio14 {
 
     /**

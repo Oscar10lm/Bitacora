@@ -1,36 +1,5 @@
 package dosw.semana_3.extra.patrones.creacionales.abstract_factory;
 
-/**
- * ============================================================================
- * PATRÓN DE DISEÑO: ABSTRACT FACTORY (CREACIONAL)
- * ============================================================================
- *
- * DEFINICIÓN:
- * Es un patrón de diseño creacional que nos permite producir familias de 
- * objetos relacionados sin especificar sus clases concretas.
- *
- * VENTAJAS CLAVE:
- * - Asegura que los productos creados por una fábrica sean compatibles entre sí
- *   (ej. no mezclarás un control de Xbox con la interfaz de PlayStation).
- * - Evita un acoplamiento fuerte entre el cliente (GameEngine) y los productos 
- *   concretos.
- * - Sigue el principio SRP (Single Responsibility Principle) al extraer la 
- *   lógica de creación a fábricas concretas.
- * - Sigue el principio OCP (Open/Closed Principle) al permitir agregar nuevas 
- *   familias (ej. NintendoFactory) sin romper el código cliente existente.
- *
- * ----------------------------------------------------------------------------
- * EJERCICIO PRÁCTICO: MOTOR DE VIDEOJUEGOS MULTICONSOLA
- * ----------------------------------------------------------------------------
- * Una empresa desarrolla videojuegos que deben ejecutarse en distintas consolas.
- * Cada consola ofrece una familia de componentes compatibles entre sí:
- * - Control (se conecta)
- * - Juego (se inicia)
- * - Interfaz gráfica (se renderiza)
- * 
- * Consolas soportadas: PlayStation y Xbox.
- * El motor del juego (cliente) no conoce las implementaciones concretas.
- */
 public class GameEngineSystem {
 
     // ==========================================

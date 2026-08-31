@@ -1,32 +1,5 @@
 package dosw.semana_3.extra.patrones.estructurales.adapter;
 
-/**
- * ============================================================================
- * PATRÓN DE DISEÑO: ADAPTER (ESTRUCTURAL)
- * ============================================================================
- *
- * DEFINICIÓN:
- * Es un patrón de diseño estructural que permite la colaboración entre objetos 
- * con interfaces incompatibles. El patrón Adapter te permite crear una clase 
- * intermedia que sirva como traductora entre tu código y una clase heredada, 
- * una clase de un tercero o cualquier otra clase con una interfaz extraña.
- *
- * VENTAJAS CLAVE:
- * - SINGLE RESPONSIBILITY PRINCIPLE (SRP): Puedes separar la interfaz o el código 
- *   de conversión de datos de la lógica de negocio primaria del programa.
- * - OPEN/CLOSED PRINCIPLE (OCP): Puedes introducir nuevos tipos de adaptadores 
- *   al programa sin descomponer el código cliente existente, siempre y cuando 
- *   trabajen con los adaptadores a través de la interfaz con el cliente.
- *
- * ----------------------------------------------------------------------------
- * EJERCICIO PRÁCTICO: GASOLINERÍA INTELIGENTE
- * ----------------------------------------------------------------------------
- * Una gasolinería inteligente atiende vehículos a combustión usando un sistema 
- * estándar interno que mide en "litros". Con la llegada de vehículos eléctricos, 
- * incorporan cargadores de distintos proveedores (Rápido, Lento), los cuales 
- * miden en "KWh" y tienen interfaces incompatibles.
- * El sistema central no debe cambiar. Se usan adaptadores para unificar el proceso.
- */
 public class GasStationSystem {
 
     // ==========================================

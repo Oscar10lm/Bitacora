@@ -1,27 +1,5 @@
 package dosw.semana_3.extra.patrones.creacionales.builder;
 
-/**
- * ============================================================================
- * EJERCICIO PRÁCTICO: CONFIGURADOR DE COMPUTADORAS (Builder)
- * ============================================================================
- *
- * Una tienda de tecnología arma computadoras a pedido. El proceso de ensamblaje 
- * es el mismo, pero el resultado final varía según el tipo de equipo solicitado.
- * Ejemplos: PC Gamer, PC de Oficina.
- * 
- * La tienda quiere separar el proceso de construcción del objeto final.
- * 
- * Cada computadora está conformada por: 
- * - Procesador
- * - Memoria RAM
- * - Almacenamiento
- * - Fuente de poder
- * 
- * Componentes adicionales (Opcionales): 
- * - Tarjeta gráfica dedicada
- * - Sistema de refrigeración líquida
- * - Luces RGB
- */
 public class ComputerBuilderSystem {
 
     // ==========================================

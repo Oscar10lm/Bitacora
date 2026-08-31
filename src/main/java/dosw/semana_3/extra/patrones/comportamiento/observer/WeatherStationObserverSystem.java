@@ -3,24 +3,6 @@ package dosw.semana_3.extra.patrones.comportamiento.observer;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * ============================================================================
- * EJERCICIO PRÁCTICO: ESTACIÓN METEOROLÓGICA (Observer)
- * ============================================================================
- *
- * Una estación meteorológica (Sujeto) mide la temperatura local y notifica 
- * automáticamente a varios paneles de visualización o pantallas (Observadores) 
- * cada vez que la temperatura cambia.
- * 
- * Paneles de visualización:
- * - Pantalla Web
- * - App Móvil
- * - Pantalla LED (Cartel en la calle)
- *
- * La estación no debe conocer los detalles de cómo cada panel procesa o 
- * muestra el dato; solo sabe que puede enviarles la actualización de la 
- * temperatura cuando ocurra una medición nueva.
- */
 public class WeatherStationObserverSystem {
 
     // ==========================================

@@ -3,34 +3,6 @@ package dosw.semana_3.extra.patrones.comportamiento.observer;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * ============================================================================
- * PATRÓN DE DISEÑO: OBSERVER (COMPORTAMIENTO)
- * ============================================================================
- *
- * DEFINICIÓN:
- * Define una relación de dependencia de uno-a-muchos entre objetos, de forma 
- * que cuando un objeto (el "sujeto" o "publicador") cambia de estado, se 
- * notifica y actualiza automáticamente a todos los objetos dependientes 
- * (los "observadores" o "suscriptores").
- *
- * VENTAJAS CLAVE:
- * - Principio Abierto/Cerrado: Puedes introducir nuevas clases de suscriptores 
- *   sin tener que cambiar el código del publicador.
- * - Relaciones dinámicas: Los objetos pueden suscribirse o desuscribirse en 
- *   tiempo de ejecución.
- * - Desacoplamiento total: El Sujeto no necesita conocer los detalles concretos 
- *   ni las clases de sus Observadores, solo que implementan una interfaz común.
- *
- * ----------------------------------------------------------------------------
- * EJERCICIO PRÁCTICO: CANAL DE YOUTUBE
- * ----------------------------------------------------------------------------
- * Un canal de YouTube notifica automáticamente a todos sus suscriptores cuando 
- * sube un video nuevo. Los suscriptores pueden unirse o salir de la lista en 
- * cualquier momento. 
- * El canal no conoce los detalles de qué hace cada suscriptor con la 
- * notificación (uno puede mostrar un popup, otro enviar un email, etc.).
- */
 public class YouTubeChannelObserverSystem {
 
     // ==========================================

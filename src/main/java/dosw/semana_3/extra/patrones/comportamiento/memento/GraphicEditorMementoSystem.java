@@ -4,16 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
-/**
- * ============================================================================
- * EJERCICIO PRÁCTICO Me3: EDITOR GRÁFICO / CANVAS (Memento)
- * ============================================================================
- *
- * Un editor de diseño gráfico permite deshacer/rehacer cambios en un lienzo 
- * (mover, cambiar color, redimensionar figuras), guardando el estado del lienzo 
- * antes de cada operación, sin que el historial conozca la estructura interna 
- * de las figuras.
- */
 public class GraphicEditorMementoSystem {
 
     // ==========================================
