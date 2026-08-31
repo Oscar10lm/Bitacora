@@ -1,10 +1,4 @@
 # Bitácora DOSW - Oscar Lasso
-
-Este documento sirve como guía rápida para encontrar los patrones de diseño y operaciones de streams aplicados en los ejercicios.
-
----
-
-
 <br>
 <div align="center">
   <h1>------------- Semana 1: Streams -------------</h1>
