@@ -31,5 +31,21 @@ public class Main {
         
         System.out.println("Estado final: " + invisiblePoweredWarrior.getDescription());
         invisiblePoweredWarrior.attack();
+
+        // 4. Otros personajes (Mago y Arquero)
+        System.out.println("\n[4] Creando compañeros de equipo (Mago y Arquero)...");
+        CharacterBuilder mageBuilder = new MageBuilder();
+        Character mage = mageBuilder.setName("Gandalf")
+                                    .setWeapon("Báculo Milenario")
+                                    .setSkill("Bola de Fuego")
+                                    .build();
+        System.out.println("Personaje 2: " + mage.getDescription());
+        
+        CharacterBuilder archerBuilder = new ArcherBuilder();
+        Character archer = archerBuilder.setName("Legolas")
+                                        .setWeapon("Arco Élfico")
+                                        .setSkill("Tiro Certero")
+                                        .build();
+        System.out.println("Personaje 3: " + archer.getDescription());
     }
 }

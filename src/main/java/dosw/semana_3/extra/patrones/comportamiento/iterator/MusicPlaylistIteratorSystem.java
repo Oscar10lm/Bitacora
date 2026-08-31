@@ -99,7 +99,7 @@ public class MusicPlaylistIteratorSystem {
         }
 
         @Override
-        public String getNext() {
+        public Song getNext() {
             if (this.hasMore()) {
                 Song song = playlist.getSongs()[currentPosition];
                 currentPosition++;

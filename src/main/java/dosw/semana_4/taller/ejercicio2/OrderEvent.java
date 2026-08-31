@@ -1,6 +1,6 @@
 package dosw.semana_4.taller.ejercicio2;
 
-public class OrderEvent {
+public class    OrderEvent {
     private final String orderId;
     private final String status;
 

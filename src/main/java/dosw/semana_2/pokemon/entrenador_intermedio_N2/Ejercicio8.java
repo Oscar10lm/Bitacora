@@ -1,4 +1,4 @@
-﻿package dosw.semana_2.pokemon.entrenador_intermedio_N2;
+package dosw.semana_2.pokemon.entrenador_intermedio_N2;
 
 import java.util.List;
 

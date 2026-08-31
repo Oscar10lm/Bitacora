@@ -1,18 +1,31 @@
 package dosw.semana_4.taller.ejercicio1;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("--- Plataforma de Pagos Inteligentes ---");
-        
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Digite su nacionalidad ");
+        String nacionalidad = sc.nextLine();
+
+        System.out.println("Digite su precio ");
+        double precio = sc.nextDouble();
+
+        System.out.println("Digite su medio de pago");
+        String medio = sc.nextLine();
+
         Checkout checkout = new Checkout();
-        
-        // Simulación de usuario en Colombia
-        System.out.println("\nUsuario de Colombia comprando por $150000:");
-        PaymentFactory colombiaFactory = new ColombiaPaymentFactory();
-        PaymentStrategy pagoNequi = colombiaFactory.create("Nequi");
-        
-        checkout.setPaymentStrategy(pagoNequi);
-        checkout.processPayment(150000);
+
+        if(nacionalidad.equalsIgnoreCase("colombia")){
+            System.out.println("\nUsuario de Colombia comprando por $150000:");
+            PaymentFactory colombiaFactory = new ColombiaPaymentFactory();
+            PaymentStrategy pagoNequi = colombiaFactory.create(medio);
+            checkout.setPaymentStrategy(pagoNequi);
+            checkout.processPayment(precio);
+        }
+
         
         // Simulación de usuario en USA
         System.out.println("\nUsuario de USA comprando por $50:");

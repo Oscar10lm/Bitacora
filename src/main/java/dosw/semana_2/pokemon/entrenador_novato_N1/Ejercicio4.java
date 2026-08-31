@@ -1,4 +1,4 @@
-﻿package dosw.semana_2.pokemon.entrenador_novato_N1;
+package dosw.semana_2.pokemon.entrenador_novato_N1;
 
 import java.util.Comparator;
 import java.util.List;
