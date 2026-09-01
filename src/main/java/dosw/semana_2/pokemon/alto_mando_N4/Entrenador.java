@@ -1,4 +1,4 @@
-﻿package dosw.semana_2.pokemon.alto_mando_N4;
+package dosw.semana_2.pokemon.alto_mando_N4;
 
 import java.util.List;
 
