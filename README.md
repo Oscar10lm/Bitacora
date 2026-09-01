@@ -364,7 +364,32 @@ Este documento sirve como guía rápida para encontrar los patrones de diseño y
 
 
 
-### Extra
+### Ejercicios Diapositivas
+
+#### Solid
+
+- **Ejercicio1: [Ejercicio1.java](src/main/java/dosw/semana_3/taller/solid/Ejercicio1.java)**
+
+- **Ejercicio2: [Ejercicio2.java](src/main/java/dosw/semana_3/taller/solid/Ejercicio2.java)**
+
+- **Ejercicio3: [Ejercicio3.java](src/main/java/dosw/semana_3/taller/solid/Ejercicio3.java)**
+
+- **Ejercicio4: [Ejercicio4.java](src/main/java/dosw/semana_3/taller/solid/Ejercicio4.java)**
+
+- **Ejercicio5: [Ejercicio5.java](src/main/java/dosw/semana_3/taller/solid/Ejercicio5.java)**
+
+- **Ejercicio6: [Ejercicio6.java](src/main/java/dosw/semana_3/taller/solid/Ejercicio6.java)**
+  - **Uso / Definición:** Un E-Commerce debe integrar constantemente nuevos medios de pago (cripto, PSE, Nequi) y el equipo teme que agregar estas opciones rompa el flujo de compra principal. (2) PRINCIPIO SOLID A APLICAR: OCP - Open/Closed Principle (Principio de Abierto/Cerrado). (3) JUSTIFICACIÓN TÉCNICA: El principal problema es el miedo a romper código existente al agregar funcionalidades nuevas. OCP dicta que el sistema (el flujo de compra) debe estar ABIERTO a la extensión (agregar PSE, Nequi), pero CERRADO a la modificación (no alterar la clase central `CheckoutService` con nuevos `if-else`). Al aplicar OCP, se elimina el riesgo de romper el flujo actual porque no se toca el código central que ya funciona, simplemente se agregan nuevas clases que el sistema central es capaz de usar a través de polimorfismo. (4) SOLUCIÓN PROPUESTA (Estructura): Se crea una interfaz `PaymentMethod`. Cada nuevo método de pago será una clase separada que implemente esta interfaz. El `CheckoutService` solo dependerá de la interfaz. (Muy similar a la solución del Ejercicio 3, y se implementa típicamente usando el patrón de diseño Strategy).
+
+- **Ejercicio7: [Ejercicio7.java](src/main/java/dosw/semana_3/taller/solid/Ejercicio7.java)**
+
+- **Ejercicio8: [Ejercicio8.java](src/main/java/dosw/semana_3/taller/solid/Ejercicio8.java)**
+
+- **Ejercicio9: [Ejercicio9.java](src/main/java/dosw/semana_3/taller/solid/Ejercicio9.java)**
+
+- **Ejercicio10: [Ejercicio10.java](src/main/java/dosw/semana_3/taller/solid/Ejercicio10.java)**
+
+
 
 #### Patrones
 
@@ -976,30 +1001,6 @@ Este documento sirve como guía rápida para encontrar los patrones de diseño y
 - **Ejercicio19: [Ejercicio19.java](src/main/java/dosw/semana_3/taller/patrones/Ejercicio19.java)**
   - **Uso / Definición:** Una plataforma de streaming compleja que involucra recomendaciones, tipos de usuario, algoritmos de búsqueda, notificaciones multicanal e integraciones de terceros. (2) ANÁLISIS DE PRINCIPIOS SOLID A CONSIDERAR: - SRP (Responsabilidad Única): El motor de recomendaciones, el buscador, el reproductor y el facturador deben ser módulos completamente separados. Ninguna "Clase Dios" debe orquestar todo esto. - OCP (Abierto/Cerrado): El sistema debe estar preparado para que mañana se agregue el algoritmo de búsqueda "Por Tendencias en Redes" sin tener que modificar la lógica del buscador principal. - LSP e ISP (Sustitución de Liskov y Segregación de Interfaces): Vital para los Tipos de Usuarios. Un usuario gratuito no debe verse obligado a implementar métodos de `descargarVideo()` (ISP), pero todos deben poder pasarse al reproductor de video sin que este falle (LSP). - DIP (Inversión de Dependencias): El núcleo de la aplicación de streaming jamás debe depender directamente de "PayU" o "Stripe". Debe depender de una interfaz `PaymentGateway`. (3) ANÁLISIS DE PATRONES DE DISEÑO A CONSIDERAR: 1. Algoritmos de Búsqueda -> **Strategy**: Encapsular las búsquedas (popularidad, relevancia) en distintas clases (Estrategias) y permitir que el usuario las seleccione en tiempo de ejecución. 2. Notificaciones Multicanal -> **Observer**: Cuando sale un nuevo episodio, el sistema notifica. Los canales (Push, Email) son "Observadores" suscritos a ese evento. 3. Integraciones Externas -> **Adapter / Facade**: Utilizar Adaptadores para conectar las APIs raras de subtítulos externos con nuestra interfaz local, y Fachadas para simplificar procesos complejos de pasarelas de pago. 4. Tipos de Usuario Complejos -> **Factory Method**: Para crear el perfil y las configuraciones de un nuevo usuario en el registro según el plan que haya pagado.
 
-#### Solid
-
-- **Ejercicio1: [Ejercicio1.java](src/main/java/dosw/semana_3/taller/solid/Ejercicio1.java)**
-
-- **Ejercicio2: [Ejercicio2.java](src/main/java/dosw/semana_3/taller/solid/Ejercicio2.java)**
-
-- **Ejercicio3: [Ejercicio3.java](src/main/java/dosw/semana_3/taller/solid/Ejercicio3.java)**
-
-- **Ejercicio4: [Ejercicio4.java](src/main/java/dosw/semana_3/taller/solid/Ejercicio4.java)**
-
-- **Ejercicio5: [Ejercicio5.java](src/main/java/dosw/semana_3/taller/solid/Ejercicio5.java)**
-
-- **Ejercicio6: [Ejercicio6.java](src/main/java/dosw/semana_3/taller/solid/Ejercicio6.java)**
-  - **Uso / Definición:** Un E-Commerce debe integrar constantemente nuevos medios de pago (cripto, PSE, Nequi) y el equipo teme que agregar estas opciones rompa el flujo de compra principal. (2) PRINCIPIO SOLID A APLICAR: OCP - Open/Closed Principle (Principio de Abierto/Cerrado). (3) JUSTIFICACIÓN TÉCNICA: El principal problema es el miedo a romper código existente al agregar funcionalidades nuevas. OCP dicta que el sistema (el flujo de compra) debe estar ABIERTO a la extensión (agregar PSE, Nequi), pero CERRADO a la modificación (no alterar la clase central `CheckoutService` con nuevos `if-else`). Al aplicar OCP, se elimina el riesgo de romper el flujo actual porque no se toca el código central que ya funciona, simplemente se agregan nuevas clases que el sistema central es capaz de usar a través de polimorfismo. (4) SOLUCIÓN PROPUESTA (Estructura): Se crea una interfaz `PaymentMethod`. Cada nuevo método de pago será una clase separada que implemente esta interfaz. El `CheckoutService` solo dependerá de la interfaz. (Muy similar a la solución del Ejercicio 3, y se implementa típicamente usando el patrón de diseño Strategy).
-
-- **Ejercicio7: [Ejercicio7.java](src/main/java/dosw/semana_3/taller/solid/Ejercicio7.java)**
-
-- **Ejercicio8: [Ejercicio8.java](src/main/java/dosw/semana_3/taller/solid/Ejercicio8.java)**
-
-- **Ejercicio9: [Ejercicio9.java](src/main/java/dosw/semana_3/taller/solid/Ejercicio9.java)**
-
-- **Ejercicio10: [Ejercicio10.java](src/main/java/dosw/semana_3/taller/solid/Ejercicio10.java)**
-
-
 <br>
 <div align="center">
   <h1>------------- Semana 4 -------------</h1>
@@ -1321,155 +1322,3 @@ Esta sección es una guía rápida de referencia con los comandos más útiles y
 - `git stash pop`: Saca los cambios del cajón y los vuelve a aplicar a tu código.
 - `git stash list`: Muestra todos los guardados temporales que tienes.
 
-<br>
-<div align="center">
-  <h1>------------- Guía de Decisión Rápida -------------</h1>
-</div>
-<br>
-
-Si el enunciado dice **esto**... entonces usa **esto otro**. Tu brújula para el parcial.
-
----
-
-### 🔍 ¿Cuándo usar Optional?
-
-| Si el enunciado dice... | Usa |
-|---|---|
-| "Buscar un producto/usuario/elemento por ID" | `stream().filter(...).findFirst()` → devuelve `Optional` |
-| "Si existe, hacer algo; si no, mostrar mensaje" | `.ifPresent()` o `.orElse()` |
-| "Obtener el primero que cumpla X condición" | `.findFirst()` → `Optional` |
-| "Si no hay resultado, usar un valor por defecto" | `.orElse(valorDefault)` |
-| "Si no hay resultado, lanzar error" | `.orElseThrow(() -> new RuntimeException(...))` |
-| "Encontrar el máximo / mínimo" | `.max()` / `.min()` → devuelven `Optional` |
-| "Calcular el promedio" | `.average()` → devuelve `OptionalDouble` |
-| "Puede ser null" / "puede no existir" | `Optional.ofNullable(valor)` |
-
----
-
-### 🌊 ¿Cuándo usar cada operación de Stream?
-
-| Si el enunciado dice... | Usa |
-|---|---|
-| "Filtrar / extraer solo los que cumplan..." | `.filter(condición)` |
-| "Filtrar con dos o más condiciones" | `.filter(c1 && c2)` o `.filter(c1).filter(c2)` |
-| "Obtener solo los nombres / solo un campo" | `.map(Persona::nombre)` |
-| "Convertir a mayúsculas / transformar" | `.map(String::toUpperCase)` |
-| "Convertir Strings a números" | `.map(Integer::parseInt)` |
-| "Ordenar alfabéticamente" | `.sorted()` o `.sorted(Comparator.comparing(...))` |
-| "Ordenar de mayor a menor" | `.sorted(Comparator.comparingX(...).reversed())` |
-| "Ordenar por X, y si empatan por Y" | `.sorted(Comparator.comparing(X).thenComparing(Y))` |
-| "Eliminar duplicados / valores únicos" | `.distinct()` |
-| "¿Cuántos hay?" / "Contar" | `.count()` |
-| "Suma total / Sumar salarios" | `.mapToDouble(...).sum()` o `.reduce(0, Double::sum)` |
-| "Promedio" | `.mapToDouble(...).average()` |
-| "Agrupar por categoría / departamento / ciudad" | `Collectors.groupingBy(...)` |
-| "Agrupar y contar cuántos hay en cada grupo" | `Collectors.groupingBy(..., Collectors.counting())` |
-| "Agrupar y listar solo los nombres de cada grupo" | `Collectors.groupingBy(..., Collectors.mapping(...))` |
-| "Separar en dos grupos (sí/no, aprobados/reprobados)" | `Collectors.partitioningBy(...)` |
-| "Los 3 primeros / Top N" | `.sorted(...).limit(N)` |
-| "Saltar los primeros N" / "Página 2" | `.skip(N).limit(N)` |
-| "Unir nombres con coma" / "como texto" | `Collectors.joining(", ")` |
-| "Crear un mapa clave → valor" | `Collectors.toMap(clave, valor)` |
-| "¿Hay alguno que cumpla X?" | `.anyMatch(condición)` |
-| "¿Todos cumplen X?" | `.allMatch(condición)` |
-| "¿Ninguno cumple X?" | `.noneMatch(condición)` |
-| "Estadísticas completas (min, max, avg, sum, count)" | `Collectors.summarizingDouble(...)` |
-| "Aplanar listas dentro de listas" | `.flatMap(x -> x.getLista().stream())` |
-| "Ejecutar algo por cada elemento" | `.forEach(acción)` |
-
----
-
-### 🏗️ ¿Cuándo usar cada Patrón de Diseño?
-
-#### Patrones Creacionales (Crear objetos)
-
-| Si el enunciado dice... | Patrón |
-|---|---|
-| "Constructor con muchos parámetros" / "telescoping constructor" | **Builder** |
-| "Configuración paso a paso" / "objeto inmutable complejo" | **Builder** |
-| "Crear objetos sin especificar la clase concreta" | **Factory Method** |
-| "Generar un reporte en PDF, Excel o CSV según configuración" | **Factory Method** |
-| "Familias de objetos relacionados" / "depende de la región/país" | **Abstract Factory** |
-| "Pasarelas de pago según el país (Colombia vs USA)" | **Abstract Factory** |
-| "Solo una instancia en toda la aplicación" / "configuración global" | **Singleton** |
-| "Clonar / copiar un objeto existente como plantilla" | **Prototype** |
-
-#### Patrones Estructurales (Organizar clases)
-
-| Si el enunciado dice... | Patrón |
-|---|---|
-| "Interfaz incompatible" / "API externa con formato diferente" | **Adapter** |
-| "Convertir centímetros a pulgadas" / "dólares a pesos" | **Adapter** |
-| "No podemos modificar el código del proveedor" | **Adapter** |
-| "Agregar funcionalidad dinámicamente" / "extras opcionales" | **Decorator** |
-| "If-else para agregar toppings / extras / potenciadores" | **Decorator** |
-| "Envolver un objeto con capas adicionales" | **Decorator** |
-| "Simplificar un sistema complejo" / "ocultar pasos internos" | **Facade** |
-| "Un solo método que haga todo por detrás" | **Facade** |
-| "Dos dimensiones que varían independientemente" | **Bridge** |
-| "Tipo de mensaje × Algoritmo de compresión" | **Bridge** |
-| "Estructura de árbol" / "jerarquía parte-todo" | **Composite** |
-| "Control de acceso" / "carga perezosa" / "proxy de seguridad" | **Proxy** |
-| "Muchos objetos similares → optimizar memoria" | **Flyweight** |
-
-#### Patrones de Comportamiento (Comunicación entre objetos)
-
-| Si el enunciado dice... | Patrón |
-|---|---|
-| "Algoritmos intercambiables" / "elegir forma de pago/envío/descuento" | **Strategy** |
-| "El usuario elige entre varias formas de hacer lo mismo" | **Strategy** |
-| "Notificar a múltiples sistemas cuando algo cambie" | **Observer** |
-| "Cuando un pedido cambia de estado, avisar a X, Y, Z" | **Observer** |
-| "Suscriptores / listeners / eventos" | **Observer** |
-| "Cadena de validaciones" / "pasa por múltiples filtros" | **Chain of Responsibility** |
-| "Si este aprueba, pasa al siguiente; si no, se detiene" | **Chain of Responsibility** |
-| "El objeto cambia su comportamiento según su estado" | **State** |
-| "Borrador → En Revisión → Aprobado → Rechazado" | **State** |
-| "Deshacer / rehacer operaciones" / "historial de acciones" | **Command** |
-| "Encapsular acciones como objetos" | **Command** |
-| "Guardar y restaurar estado anterior" / "checkpoint" | **Memento** |
-| "Ctrl+Z en un editor" | **Memento** |
-| "Recorrer una colección personalizada sin exponer su estructura" | **Iterator** |
-| "Esqueleto de algoritmo con pasos que cambian en subclases" | **Template Method** |
-| "Evitar que los objetos se comuniquen directamente entre sí" | **Mediator** |
-| "Chat grupal / torre de control" | **Mediator** |
-
----
-
-### 📐 ¿Cuándo combinar patrones?
-
-| Situación | Combinación |
-|---|---|
-| "Construir objeto complejo + notificar cuando se confirme" | **Builder + Observer** |
-| "Elegir algoritmo según país + crear con fábrica" | **Strategy + Abstract Factory** |
-| "Validar en cadena + cambiar estado del documento" | **Chain of Responsibility + State** |
-| "Construir personaje + agregarle poderes dinámicamente" | **Builder + Decorator** |
-| "Elegir algoritmo + actualizar UI cuando cambie" | **Strategy + Observer** |
-| "Integrar API externa + simplificar su uso" | **Adapter + Facade** |
-
----
-
-### 🎯 ¿Cuándo usar Scanner?
-
-| Si el enunciado dice... | Método de Scanner |
-|---|---|
-| "Pedir nombre / texto con espacios" | `sc.nextLine()` |
-| "Pedir un número entero" | `sc.nextInt()` + `sc.nextLine()` ← limpiar buffer |
-| "Pedir un número decimal" | `sc.nextDouble()` + `sc.nextLine()` ← limpiar buffer |
-| "Pedir solo una palabra (sin espacios)" | `sc.next()` |
-| "Menú interactivo" / "elegir opción" | `while + switch + nextInt()` |
-| "Leer datos hasta que escriba 'fin'" | `while(true) + break si equals("fin")` |
-| "Validar que lo que ingresó sea un número" | `sc.hasNextInt()` en un `do-while` |
-
----
-
-### 🔗 ¿Cuándo usar Referencias a Métodos (::)?
-
-| Lambda | Referencia equivalente | Tipo |
-|---|---|---|
-| `x -> System.out.println(x)` | `System.out::println` | Instancia |
-| `p -> p.nombre()` | `Persona::nombre` | Del tipo |
-| `s -> s.toUpperCase()` | `String::toUpperCase` | Del tipo |
-| `s -> Integer.parseInt(s)` | `Integer::parseInt` | Estático |
-| `n -> new Persona(n)` | `Persona::new` | Constructor |
-| `(a, b) -> a.compareTo(b)` | `String::compareTo` | Del tipo |
