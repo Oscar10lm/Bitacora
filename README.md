@@ -1325,4 +1325,12 @@ Esta sección es una guía rápida de referencia con los comandos más útiles y
 
 $Link:$ https://canva.link/iql6wsarlmd8lxg
 
+![MI_1.png](images/MI_1.png)
 
+---
+
+![MI_2.png](images/MI_2.png)
+
+---
+
+![MI_3.png](images/MI_3.png)
