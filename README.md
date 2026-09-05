@@ -1316,3 +1316,13 @@ Esta sección es una guía rápida de referencia con los comandos más útiles y
 - `git stash pop`: Saca los cambios del cajón y los vuelve a aplicar a tu código.
 - `git stash list`: Muestra todos los guardados temporales que tienes.
 
+
+<br>
+<div align="center">
+  <h1> MANUAL DE IDENTIDAD </h1>
+</div>
+<br>
+
+$Link:$ https://canva.link/iql6wsarlmd8lxg
+
+
